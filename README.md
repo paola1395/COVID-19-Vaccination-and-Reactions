@@ -4,11 +4,34 @@
 
 ### Motivation:
 
+
 ### Project Description/Outline:
 
 
 ### Research Questions to Answer:
-
+Track COVID-19 vaccination in the World, answer instantly to your questions:
+* Which country is using what vaccine?
+* In which country the vaccination programme is more advanced?
+* Where are vaccinated more people per day? 
+  * But in terms of percent from entire population ?
+* # of unique manufacturers/Vaccines
+* What vaccines are used and in which countries?
+* What country is vaccinated more people?
+* What country is vaccinated a larger percent from its population?
+* Peope vaccinated and people fully vaccinated
+* Total number of vaccines
+* Percent of vaccination
+* Daily vaccinations
+* Daily vaccinations per million
+* People vaccinated (vaccination scheme has 2 vaccines/person, 1st vaccination and 2nd vaccination, after 21 days);
+* People vaccination percent
+* Which country is using what vaccine or What vaccines are used and in which countries?
+* What is the vaccine distribution? Are there any decreases in the number of cases in the countries that begin the vaccination process?
+* In which country the vaccination programme is more advanced?
+* Where are vaccinated more people per day? But in terms of a percent from the entire population?
+* What country is vaccinated more people? What country is vaccinated a larger percentage of its population?
+* After the beginning of the vaccine process all around the world, how the infection trend moves?
+* Are there any correlations between the factors of development indicators and the numbers of vaccinations?
 
 ### Datasets used but not limited to:
 1. Global real time data:	https://github.com/owid/covid-19-data/tree/master/public/data
