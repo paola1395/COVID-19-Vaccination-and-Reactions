@@ -31,7 +31,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 
 
 ### Research Questions to Answer:
-Track COVID-19 vaccination in the World, answer instantly to your questions:
+Track COVID-19 vaccination in the World, answer questions:
 * Which country is using what vaccine?
 * In which country the vaccination programme is more advanced?
 * Where are vaccinated more people per day? 
