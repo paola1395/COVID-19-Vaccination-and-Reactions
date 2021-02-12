@@ -14,7 +14,7 @@ Track COVID-19 vaccination in the World, answer instantly to your questions:
 * In which country the vaccination programme is more advanced?
 * Where are vaccinated more people per day? 
   * But in terms of percent from entire population ?
-* # of unique manufacturers/Vaccines
+* Number of unique manufacturers/Vaccines
 * What vaccines are used and in which countries?
 * What country is vaccinated more people?
 * What country is vaccinated a larger percent from its population?
