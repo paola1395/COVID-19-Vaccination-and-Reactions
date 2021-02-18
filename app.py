@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 ####################################
 from sqlalchemy.ext.automap import automap_base
 
-engine = create_engine('sqlite:///VAERS.db', echo=False)
+engine = create_engine('sqlite:///WorldWideData.sqlite', echo=False)
 Base= automap_base()
 Base.prepare(engine, reflect=True)
 
