@@ -22,7 +22,7 @@ class VAERS(Base):
 # Use the Base class to reflect the database tables
 Base.prepare(engine, reflect=True)
 
-# Assign the dow class to a variable called `Vaers`
+# Assign the 2021VAERS class to a variable called `Vaers`
 Vaers = Base.classes['2021VAERS']
 
 ####################################
@@ -51,15 +51,15 @@ def data():
     # Create a session
     session = Session(engine)
 
-    """Return the first row"""
+    """Return All Data"""
     # Query all passengers
-    first_row = session.query(Vaers.VAERS_ID).all()
+    all_data = session.query(Vaers.VAERS_ID).all()
 
     session.close()
 
     import numpy as np
     # Convert list of tuples into normal list
-    results = list(np.ravel(first_row))
+    results = list(np.ravel(all_data))
 
     return jsonify(results)
 
