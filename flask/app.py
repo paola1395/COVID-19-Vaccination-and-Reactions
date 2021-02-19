@@ -6,7 +6,7 @@ import sqlalchemy
 ####################################
 from sqlalchemy import create_engine, inspect
 # Create engine using the `VAERS.sqlite` database file
-engine = create_engine("sqlite:///Data/VAERS.sqlite", echo=False)
+engine = create_engine("sqlite:///../Data/VAERS.sqlite", echo=False)
 
 from sqlalchemy.ext.automap import automap_base
 # Declare a Base using `automap_base()`

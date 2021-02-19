@@ -15,7 +15,7 @@ def welcome():
 @app.route("/data")
 def data():
     # Set up the connection to our database
-    conn = sqlite3.connect("Data/VAERS.db")
+    conn = sqlite3.connect("../Data/VAERS.db")
 
     # Create a cursor object
     cur = conn.cursor()
