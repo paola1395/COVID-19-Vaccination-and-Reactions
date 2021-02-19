@@ -14,12 +14,12 @@ Base.prepare(engine, reflect=True)
 
 #Save references for each table
 # World_Data = Base.classes.worldWideData
-Base.classes.keys()
-
+# print (Base.classes.keys())
+US_Data = Base.classes["2021VAERS"]
 ####################################
 # Flask Setup
 ####################################
-from flask import Flask, jsonify
+from flask import Flask, jsonify, redirect, render_template
 app= Flask(__name__)
 
 ####################################
@@ -27,12 +27,12 @@ app= Flask(__name__)
 ####################################
 
 #HOME/WELCOME PAGE
-# @app.route("/")
-
-# def Homepage():
+@app.route("/")
+def homepage():
+    return render_template("index.html")
 
 #US DATA PAGE
-@ app.route("/api/v1.0/us_vaccines")
+@ app.route("/us_vaccines")
 def us_vaccines():
     session = Session(engine)
 
