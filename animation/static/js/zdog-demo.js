@@ -8,10 +8,10 @@ const illo = new Zdog.Illustration({
 });
 
 // Dot for line
-var body = new Zdog.Cylinder({
+var body = new Zdog.Shape({
   addTo: illo,
-  diameter: 100,
-  stroke: 100,
+  diameter: 200,
+  stroke: 200,
   color: "#b94646",
 });
 
@@ -26,7 +26,7 @@ const circle1 = new Zdog.Ellipse({
   addTo: illo,
   diameter: 20,
   closed: true,
-  translate: { z: 20 },
+  translate: { z: 20, x: 0, y: 0 },
   scale: 1,
   stroke: 8,
   fill: true,
@@ -39,13 +39,73 @@ new Zdog.Shape({
   scale: 1/circle1.scale.z,
   stroke: 4,
   color: "#ff0000",
+  // backface: false
 });
 
-// z line
+// copy
 circle1.copyGraph({
-  translate:{ z: 20, x:60},
+  translate:{ z: 20, x: 40, y: 20},
 });
 
+circle1.copyGraph({
+  translate:{ z: 20, x: 80, y: 0},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: 20, y: 60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -40, y: 20},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -80, y: 0},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: 20, y: -60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -40, y: -20},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -80, y: -60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -20, y: -60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -40, y: -90},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -20, y: 80},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -60, y: 50},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: -40, y: -20},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: 80, y: 60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: 80, y: -60},
+});
+
+circle1.copyGraph({
+  translate:{ z: 20, x: 40, y: -30},
+});
 
 // // render shapes in order added
 // var virus = new Zdog.Group({
@@ -148,7 +208,9 @@ illo.updateRenderGraph();
   
 function animate() {
   // rotate illo each frame
-  illo.rotate.y += 0.02;
+  // illo.rotate.y += 0.02;
+  illo.rotate.x += 0.02;
+  illo.rotate.z += 0.02;
   illo.updateRenderGraph();
   // animate next frame
   requestAnimationFrame( animate );
