@@ -1,21 +1,21 @@
-// zdog-demo.js
+// virusball.js
 // flag
-let isSpinning = true;
+// let isSpinning = true;
 
 // create illo
 const illo = new Zdog.Illustration({
   // set canvas with selector
   element: '.zdog-canvas',
-  rotate: { x: -Zdog.TAU/16 },
-  dragRotate: true,
-    // manipulate the flag when 
-  // the dragging starts and ends
-  onDragStart() {
-    isSpinning = false
-  },
-  onDragEnd() {
-    isSpinning = true
-  }
+  rotate: { x: -Zdog.TAU/14 },
+  dragRotate: true
+  // manipulate the flag when 
+  // stop spinning when drag starts
+  // onDragStart: function() {
+  //   isSpinning = false;
+  // },
+  // onDragEnd: function() {
+  //   isSpinning = true;
+  // }
 });
 
 // Dot for line
@@ -23,7 +23,7 @@ var body = new Zdog.Shape({
   addTo: illo,
   diameter: 160,
   stroke: 160,
-  color: "#696969",
+  color: "#808080",
 });
 
 // Create mirror zdog.Group for triangle
@@ -256,9 +256,9 @@ illo.updateRenderGraph();
   
 function animate() {
   // rotate illo each frame
-  // illo.rotate.y += 0.01;
-  illo.rotate.x += 0.01;
-  illo.rotate.z += 0.01;
+  illo.rotate.y += 0.005;
+  illo.rotate.x += 0.005;
+  illo.rotate.z += 0.005;
   illo.updateRenderGraph();
   // animate next frame
   requestAnimationFrame( animate );
