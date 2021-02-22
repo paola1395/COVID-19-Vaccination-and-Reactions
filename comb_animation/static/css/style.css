@@ -1,18 +1,19 @@
 .zdog-canvas {
     cursor: move;
-    padding-left: 400px;
-    padding-top: 10px;
+    padding-left: 460px;
+    padding-top: 60px;
     position:relative;
     float:left;
 }
 
 html { height: 100%; }
 
-body{
+/* body{
     background-color: rgb(202, 207, 205);
-}
+} */
 
 #my-svg{
+    padding-top: 20px;
     position: relative;
     float: left;
 }
