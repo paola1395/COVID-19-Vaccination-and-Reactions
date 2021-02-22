@@ -7,3 +7,13 @@
 }
 
 html { height: 100%; }
+
+body{
+    background-color: rgb(202, 207, 205);
+}
+
+#my-svg{
+    position: relative;
+    float: left;
+}
+
