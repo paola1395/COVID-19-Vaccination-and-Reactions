@@ -1,5 +1,5 @@
 // virusball.js
-// flag
+//flag
 // let isSpinning = true;
 
 // create illo
@@ -259,6 +259,9 @@ function animate() {
   illo.rotate.y += 0.005;
   illo.rotate.x += 0.005;
   illo.rotate.z += 0.005;
+  // illo.rotate.y += 0.23;
+  // illo.rotate.x += 0.23;
+  // illo.rotate.z += 0.1;
   illo.updateRenderGraph();
   // animate next frame
   requestAnimationFrame( animate );
