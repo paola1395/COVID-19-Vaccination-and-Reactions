@@ -36,15 +36,16 @@ def homepage():
 def us_vaccines():
     session = Session(engine)
 
-    results = session.query(US_Data.VAERS_ID, US_Data.VAX_TYPE, US_Data.VAX_DOSE_SERIES, US_Data.STATE, US_Data.AGE_YRS, US_Data.SEX, US_Data.DIED, US_Data.RECOVD, US_Data.VAX_DATE, US_Data.NUMDAYS, US_Data.SYMPTOM1, US_Data.SYMPTOM2, US_Data.SYMPTOM3, US_Data.SYMPTOM4, US_Data.SYMPTOM5).all()
+    results = session.query(US_Data.VAERS_ID, US_Data.VAX_TYPE, US_Data.VAX_MANU, US_Data.VAX_DOSE_SERIES, US_Data.STATE, US_Data.AGE_YRS, US_Data.SEX, US_Data.DIED, US_Data.RECOVD, US_Data.VAX_DATE, US_Data.NUMDAYS, US_Data.SYMPTOM1, US_Data.SYMPTOM2, US_Data.SYMPTOM3, US_Data.SYMPTOM4, US_Data.SYMPTOM5).all()
     session.close()
 
     patients= []
 
-    for ID, VAX_TYPE, VAX_DOSE_SERIES, STATE, AGE_YRS, SEX, DIED, RECOVD, VAX_DATE, NUMDAYS, SYMPTOM1, SYMPTOM2, SYMPTOM3, SYMPTOM4, SYMPTOM5 in results:
+    for ID, VAX_TYPE, VAX_MANU, VAX_DOSE_SERIES, STATE, AGE_YRS, SEX, DIED, RECOVD, VAX_DATE, NUMDAYS, SYMPTOM1, SYMPTOM2, SYMPTOM3, SYMPTOM4, SYMPTOM5 in results:
         patients_dict = {}
         patients_dict["ID"] = ID
         patients_dict["vax_type"] = VAX_TYPE
+        patients_dict["vax_manu"] = VAX_MANU
         patients_dict["vax_dose_series"] = VAX_DOSE_SERIES
         patients_dict["state"] = STATE
         patients_dict["age"] = AGE_YRS
