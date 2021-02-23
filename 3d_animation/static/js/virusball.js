@@ -259,6 +259,9 @@ function animate() {
   illo.rotate.y += 0.005;
   illo.rotate.x += 0.005;
   illo.rotate.z += 0.005;
+  // illo.rotate.y += 0.06;
+  // illo.rotate.x += 0.06;
+  // illo.rotate.z += 0.06;
   illo.updateRenderGraph();
   // animate next frame
   requestAnimationFrame( animate );
