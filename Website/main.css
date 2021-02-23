@@ -1,6 +1,6 @@
-/*License https://froala.com/wysiwyg-editor/terms/
- */
-
+/*froala_editor v3.2.3 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+  */
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -335,7 +335,7 @@ span.fr-img-caption.fr-view {
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * http://opensource.org/licenses/MIT
- */
+  */
 
 @-webkit-keyframes bounce {
   from,
@@ -3212,7 +3212,7 @@ span.fr-img-caption.fr-view {
   animation-name: rollIn;
 }
 
-/* https://github.com/nickpettit/glide */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
   from {
@@ -3952,7 +3952,7 @@ span.fr-img-caption.fr-view {
     animation-iteration-count: 1 !important;
   }
 }
-
+/*github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4138,20 +4138,7 @@ ul,
 ol {
   padding-left: 20px;
 }
-/* Fade effect */
-/* Over effect */
-/* Slide effect */
-/* Over and Slide effect */
-/* Flip Left effect */
-/* Flip Right effect */
-/* Flip Top effect */
-/* Flip Bottom effect */
-/* Wobble Left effect */
-/* Wobble Right effect */
-/* Wobble top effect */
-/* Wobble bottom effect */
-/* Zoom and Rotate Effects */
-/* Utility */
+
 .u-over-slide {
   position: absolute;
   left: 0;
@@ -4171,7 +4158,7 @@ ol {
 .u-effect-fade.u-effect-active .u-over-slide {
   opacity: 1;
 }
-/* Over effect */
+
 .u-effect-over-left .u-over-slide {
   transform: translate(-100%, 0);
   transition: all 500ms ease;
@@ -4236,7 +4223,7 @@ ol {
 .u-effect-over-bottomright.u-effect-active .u-over-slide {
   transform: translate(0, 0);
 }
-/* Slide effect */
+
 .u-effect-slide-left .u-over-slide {
   transform: translate(-100%, 0);
   transition: all 500ms ease;
@@ -4357,7 +4344,7 @@ ol {
 .u-effect-slide-bottomright.u-effect-active .u-back-slide {
   transform: translate(-100%, -100%);
 }
-/* Flip */
+
 .u-effect-flip-left,
 .u-effect-flip-left .u-slidesWrapper {
   perspective: 300px;
@@ -4422,7 +4409,7 @@ ol {
   transform: rotateX(0deg);
   transition: transform 500ms ease, transform-origin 500ms ease;
 }
-/* Wooble */
+
 .u-effect-wobble-left,
 .u-effect-wobble-left .u-slidesWrapper {
   perspective: 300px;
@@ -4491,7 +4478,7 @@ ol {
   transform-origin: center top;
   transition: transform 500ms ease, transform-origin 500ms ease;
 }
-/* Zoom */
+
 .u-effect-zoom .u-over-slide {
   transition: transform 500ms ease;
   transform: scale(0, 0);
@@ -4558,7 +4545,7 @@ ol {
 .u-btn {
   /*display: inline-block;*/
   display: table;
-  /*TODO maye need another solution for negative marin*/
+ 
   cursor: pointer;
   color: inherit;
   font-size: inherit;
@@ -16931,7 +16918,7 @@ blockquote .small:before {
   top: 0;
   bottom: 0;
 }
-/* Prevent selection and tap highlights */
+
 .pswp__container,
 .pswp__img {
   -webkit-user-select: none;
@@ -16944,12 +16931,12 @@ blockquote .small:before {
   position: absolute;
   width: 100%;
   transform-origin: left top;
-  /* for open/close transition */
+ 
   transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 .pswp__bg {
   will-change: opacity;
-  /* for open/close transition */
+  
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 .pswp--animated-in .pswp__bg,
@@ -17071,7 +17058,7 @@ blockquote .small:before {
   padding: 0;
   border: 0;
 }
-
+/* pswp__ui--over-close class it added when mouse is over element that should close gallery */
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1;
 }
@@ -17084,7 +17071,7 @@ blockquote .small:before {
   height: 44px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
-
+ 
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
@@ -17211,7 +17198,7 @@ blockquote .small:before {
   color: #000;
 }
 .pswp__share-tooltip a:first-child {
-
+ 
   border-radius: 2px 2px 0 0;
 }
 .pswp__share-tooltip a:last-child {
@@ -17321,7 +17308,7 @@ a.pswp__share--download:hover {
   opacity: 1;
 }
 .pswp__preloader--active .pswp__preloader__icn {
-  /* use .gif in browsers that don't support CSS animation */
+
   background: url("data:image/gif;base64,R0lGODlhFAAUAPMIAIeHhz8/P1dXVycnJ8/Pz7e3t5+fn29vb////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBwAIACwAAAAAFAAUAEAEUxDJSatFxtwaggWAdIyHJAhXoRYSQUhDPGx0TbmujahbXGWZWqdDAYEsp5NupLPkdDwE7oXwWVasimzWrAE1tKFHErQRK8eL8mMUlRBJVI307uoiACH5BAUHAAgALAEAAQASABIAAAROEMkpS6E4W5upMdUmEQT2feFIltMJYivbvhnZ3R0A4NMwIDodz+cL7nDEn5CH8DGZh8MtEMBEoxkqlXKVIgQCibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpjaE4W5spANUmFQX2feFIltMJYivbvhnZ3d1x4BNBIDodz+cL7nDEn5CH8DGZAsFtMMBEoxkqlXKVIgIBibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpAaA4W5vpOdUmGQb2feFIltMJYivbvhnZ3Z0g4FNRIDodz+cL7nDEn5CH8DGZgcCNQMBEoxkqlXKVIgYDibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpz6E4W5upENUmAQD2feFIltMJYivbvhnZ3V0Q4JNhIDodz+cL7nDEn5CH8DGZg8GtUMBEoxkqlXKVIggEibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkphaA4W5tpCNUmHQf2feFIltMJYivbvhnZ3d0w4BMAIDodz+cL7nDEn5CH8DGZBMLNYMBEoxkqlXKVIgoFibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpQ6A4W5vpGNUmCQL2feFIltMJYivbvhnZ3R1B4NNxIDodz+cL7nDEn5CH8DGZhcINAMBEoxkqlXKVIgwGibbK9YLBYvLtHH5K0J0IACH5BAUHAAcALAEAAQASABIAAANCeLo6wzA6FxkhbaoQ4L3ZxnXLh0EjWZ4RV71VUcCLIByyTNt2PsO8m452sBGJBsNxkUwuD03lAQBASqnUJ7aq5UYSADs=") 0 0 no-repeat;
 }
 .pswp--css_animation .pswp__preloader--active {
@@ -17344,10 +17331,7 @@ a.pswp__share--download:hover {
   margin: 0;
 }
 .pswp--css_animation .pswp__preloader__cut {
-  /*
-			The idea of animating inner circle is based on Polymer ("material") loading indicator
-			https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
-		*/
+  
   position: relative;
   width: 7px;
   height: 14px;
@@ -17445,7 +17429,7 @@ a.pswp__share--download:hover {
 .pswp__ui--hidden .pswp__caption,
 .pswp__ui--hidden .pswp__button--arrow--left,
 .pswp__ui--hidden .pswp__button--arrow--right {
-
+ 
   opacity: 0.001;
 }
 
@@ -17464,7 +17448,7 @@ a.pswp__share--download:hover {
 .u-lightbox .u-gallery-item {
   cursor: pointer;
 }
-
+/
 .backstage {
   animation-play-state: paused;
 }
@@ -17500,7 +17484,7 @@ a.pswp__share--download:hover {
     transform: translate3d(-100%, 0, 0);
   }
 }
-
+/* Fix zoomIn animation for Internet Explorer */
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -31169,7 +31153,6 @@ a.u-button-style.u-button-style.u-button-style.u-text-active-grey-90[class*="u-b
 a.u-link.u-text-hover-grey-90:hover {
   color: #1a1a1a !important;
 }
-
         h1.u-title
         {
         font-weight: 400;
@@ -31284,7 +31267,7 @@ a.u-link.u-text-hover-grey-90:hover {
         margin-top: 20px;
         margin-bottom: 20px;
         }
-      
+
         @media (max-width: 767px) {
         h1.u-title
         {
@@ -31321,7 +31304,7 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 1.5rem;
         }
         }
-     
+
         .u-sm h1.u-title
         {
         font-size: 3.75rem;
@@ -31346,7 +31329,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         font-size: 1.5rem;
         }
-      
+
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
         .u-gradient > .u-container-layout > a,
         .u-image:not(.u-shading) > .u-container-layout > a,
@@ -31400,7 +31383,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         border-color: #73a3de;
         }
-      
+ 
         .u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-1-light-1 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-4 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
         {
         color: #c3d8f2;
@@ -31424,7 +31407,6 @@ a.u-link.u-text-hover-grey-90:hover {
         background-color: #9fc1ea;
         color: #ffffff;
         }
-  
 .u-header {
   background-image: none;
 }
