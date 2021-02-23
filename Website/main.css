@@ -1,6 +1,6 @@
-/*begin-commonstyles library*//*!
- * froala_editor v3.2.3 (https://www.froala.com/wysiwyg-editor)
-  */
+/*License https://froala.com/wysiwyg-editor/terms/
+ */
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -267,7 +267,6 @@
   .fr-view ul, .fr-view ol {
     list-style-position: inside; }
 
-
 a.fr-view.fr-strong {
   font-weight: 700; }
 a.fr-view.fr-green {
@@ -332,6 +331,11 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * http://opensource.org/licenses/MIT
+ */
 
 @-webkit-keyframes bounce {
   from,
@@ -3208,7 +3212,7 @@ span.fr-img-caption.fr-view {
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+/* https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
   from {
@@ -3948,7 +3952,7 @@ span.fr-img-caption.fr-view {
     animation-iteration-count: 1 !important;
   }
 }
-/*end-commonstyles library*//*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -16971,17 +16975,11 @@ blockquote .small:before {
   top: 0;
   left: 0;
 }
-/*
-	stretched thumbnail or div placeholder element (see below)
-	style is added to avoid flickering in webkit/blink when layers overlap
-*/
+
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
 }
-/*
-	div element that matches size of large image
-	large image loads on top of it
-*/
+
 .pswp__img--placeholder--blank {
   background: #222;
 }
@@ -16991,10 +16989,7 @@ blockquote .small:before {
   left: 0;
   top: 0;
 }
-/*
-	Error message appears when image is not loaded
-	(JS option errorMsg controls markup)
-*/
+
 .pswp__error-msg {
   position: absolute;
   left: 0;
@@ -17010,7 +17005,7 @@ blockquote .small:before {
   color: #CCC;
   text-decoration: underline;
 }
-/* previews */
+
 .pswp__caption {
   text-align: center;
 }
@@ -17046,28 +17041,7 @@ blockquote .small:before {
 .pswp__previews::-webkit-scrollbar {
   display: none;
 }
-/* end previews  */
-/*end-commonstyles photoswipe*/
-/*begin-commonstyles photoswipe-default*/
-/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
-/*
 
-	Contents:
-
-	1. Buttons
-	2. Share modal and links
-	3. Index indicator ("1 of X" counter)
-	4. Caption
-	5. Loading indicator
-	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
-
-*/
-/*
-
-	1. Buttons
-
- */
-/* <button> css reset */
 .pswp__button {
   width: 44px;
   height: 44px;
@@ -17097,7 +17071,7 @@ blockquote .small:before {
   padding: 0;
   border: 0;
 }
-/* pswp__ui--over-close class it added when mouse is over element that should close gallery */
+
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1;
 }
@@ -17110,7 +17084,7 @@ blockquote .small:before {
   height: 44px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
-  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
+
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
@@ -17347,7 +17321,7 @@ a.pswp__share--download:hover {
   opacity: 1;
 }
 .pswp__preloader--active .pswp__preloader__icn {
-  /* We use .gif in browsers that don't support CSS animation */
+  /* use .gif in browsers that don't support CSS animation */
   background: url("data:image/gif;base64,R0lGODlhFAAUAPMIAIeHhz8/P1dXVycnJ8/Pz7e3t5+fn29vb////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBwAIACwAAAAAFAAUAEAEUxDJSatFxtwaggWAdIyHJAhXoRYSQUhDPGx0TbmujahbXGWZWqdDAYEsp5NupLPkdDwE7oXwWVasimzWrAE1tKFHErQRK8eL8mMUlRBJVI307uoiACH5BAUHAAgALAEAAQASABIAAAROEMkpS6E4W5upMdUmEQT2feFIltMJYivbvhnZ3R0A4NMwIDodz+cL7nDEn5CH8DGZh8MtEMBEoxkqlXKVIgQCibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpjaE4W5spANUmFQX2feFIltMJYivbvhnZ3d1x4BNBIDodz+cL7nDEn5CH8DGZAsFtMMBEoxkqlXKVIgIBibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpAaA4W5vpOdUmGQb2feFIltMJYivbvhnZ3Z0g4FNRIDodz+cL7nDEn5CH8DGZgcCNQMBEoxkqlXKVIgYDibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpz6E4W5upENUmAQD2feFIltMJYivbvhnZ3V0Q4JNhIDodz+cL7nDEn5CH8DGZg8GtUMBEoxkqlXKVIggEibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkphaA4W5tpCNUmHQf2feFIltMJYivbvhnZ3d0w4BMAIDodz+cL7nDEn5CH8DGZBMLNYMBEoxkqlXKVIgoFibbK9YLBYvLtHH5K0J0IACH5BAUHAAgALAEAAQASABIAAAROEMkpQ6A4W5vpGNUmCQL2feFIltMJYivbvhnZ3R1B4NNxIDodz+cL7nDEn5CH8DGZhcINAMBEoxkqlXKVIgwGibbK9YLBYvLtHH5K0J0IACH5BAUHAAcALAEAAQASABIAAANCeLo6wzA6FxkhbaoQ4L3ZxnXLh0EjWZ4RV71VUcCLIByyTNt2PsO8m452sBGJBsNxkUwuD03lAQBASqnUJ7aq5UYSADs=") 0 0 no-repeat;
 }
 .pswp--css_animation .pswp__preloader--active {
@@ -17372,7 +17346,7 @@ a.pswp__share--download:hover {
 .pswp--css_animation .pswp__preloader__cut {
   /*
 			The idea of animating inner circle is based on Polymer ("material") loading indicator
-			  https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
+			https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
 		*/
   position: relative;
   width: 7px;
@@ -17474,7 +17448,7 @@ a.pswp__share--download:hover {
 
   opacity: 0.001;
 }
-/* pswp__ui--one-slide class is added when there is just one item in gallery */
+
 .pswp__ui--one-slide .pswp__button--arrow--left,
 .pswp__ui--one-slide .pswp__button--arrow--right,
 .pswp__ui--one-slide .pswp__counter {
@@ -17490,8 +17464,7 @@ a.pswp__share--download:hover {
 .u-lightbox .u-gallery-item {
   cursor: pointer;
 }
-/*end-commonstyles photoswipe-default*/
-/*begin-commonstyles animation*/
+
 .backstage {
   animation-play-state: paused;
 }
@@ -31196,15 +31169,7 @@ a.u-button-style.u-button-style.u-button-style.u-text-active-grey-90[class*="u-b
 a.u-link.u-text-hover-grey-90:hover {
   color: #1a1a1a !important;
 }
-/*end-variables colors*/
 
-/*begin-variables sitestylecss*/
-
-
-
-        
-
-        /** common-rules **/
         h1.u-title
         {
         font-weight: 400;
@@ -31319,10 +31284,7 @@ a.u-link.u-text-hover-grey-90:hover {
         margin-top: 20px;
         margin-bottom: 20px;
         }
-        /** common-rules **/
-
-        /** publish-rules **/
-        /*begin-media rules*/
+      
         @media (max-width: 767px) {
         h1.u-title
         {
@@ -31359,13 +31321,7 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 1.5rem;
         }
         }
-        /*end-media rules*/
-        /** publish-rules **/
-
-        
-
-        /** cms-rules **/
-        /*begin-responsive rules*/
+     
         .u-sm h1.u-title
         {
         font-size: 3.75rem;
@@ -31390,10 +31346,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         font-size: 1.5rem;
         }
-        /*end-responsive rules*/
-        /** cms-rules **/
-
-        /** color-rules **/
+      
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
         .u-gradient > .u-container-layout > a,
         .u-image:not(.u-shading) > .u-container-layout > a,
@@ -31447,9 +31400,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         border-color: #73a3de;
         }
-        /** color-rules **/
-
-        /** alt-color-rules **/
+      
         .u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-1-light-1 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-4 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
         {
         color: #c3d8f2;
@@ -31473,11 +31424,7 @@ a.u-link.u-text-hover-grey-90:hover {
         background-color: #9fc1ea;
         color: #ffffff;
         }
-        /** alt-color-rules **/
-    
-
-
-/*end-variables sitestylecss*/
+  
 .u-header {
   background-image: none;
 }
@@ -31540,7 +31487,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-text-1 {
-  margin: 5px 0;
+  margin: 0;
 }
 @media (max-width: 1199px) {
   .u-footer .u-group-1 {
