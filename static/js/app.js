@@ -23,7 +23,7 @@ var chartGroup = svg.append("g")
 // Initial Params
 var chosenXAxis = "age";
 var chosenYAxis = "dose_one"
-var subgroups = data.columns.slice(1,4)
+// var subgroups = data.columns.slice(1,4)
 
 // function used for updating x-scale var upon click on axis label
 function xScale(vaccData, chosenXAxis) {
@@ -113,7 +113,7 @@ function renderYBars(barsGroup, newYScale, chosenYAxis) {
 
 // Import Data
 
-d3.json("/us_vaccines").then((importedData) => {
+d3.json("/us_vaccines", function(importedData) {
 
     // parse the data
     importedData.forEach(function(data) {
@@ -123,6 +123,7 @@ d3.json("/us_vaccines").then((importedData) => {
         data.vax_manu = +data.vax_manu;
         data.vax_dose_series = +data.vax_dose_series;
       })
+    console.log(importedData);
     
     // xLinearScale function above csv import
     var xLinearScale = xScale(importedData, chosenXAxis);
@@ -166,49 +167,49 @@ d3.json("/us_vaccines").then((importedData) => {
     //     .attr("class", "stateText");
 
     // Create group for x-axis labels
-    var xLabelsGroup = chartGroup.append("g")
-        .attr("transform", `translate(${width / 2}, ${height + 20})`);
+    // var xLabelsGroup = chartGroup.append("g")
+    //     .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
-    var ageLabel = xLabelsGroup.append("text")
-        .attr("x", 0)
-        .attr("y", 20)
-        .attr("value", "age") // value to grab for event listener
-        .classed("active", true)
-        .text("Age");
+    // var ageLabel = xLabelsGroup.append("text")
+    //     .attr("x", 0)
+    //     .attr("y", 20)
+    //     .attr("value", "age") // value to grab for event listener
+    //     .classed("active", true)
+    //     .text("Age");
 
-    var sexLabel = xLabelsGroup.append("text")
-        .attr("x", 0)
-        .attr("y", 40)
-        .attr("value", "sex") // value to grab for event listener
-        .classed("inactive", true)
-        .text("Sex");
+    // var sexLabel = xLabelsGroup.append("text")
+    //     .attr("x", 0)
+    //     .attr("y", 40)
+    //     .attr("value", "sex") // value to grab for event listener
+    //     .classed("inactive", true)
+    //     .text("Sex");
     
-    var stateLabel = xLabelsGroup.append("text")
-        .attr("x", 0)
-        .attr("y", 60)
-        .attr("value", "state") // value to grab for event listener
-        .classed("inactive", true)
-        .text("State");
+    // var stateLabel = xLabelsGroup.append("text")
+    //     .attr("x", 0)
+    //     .attr("y", 60)
+    //     .attr("value", "state") // value to grab for event listener
+    //     .classed("inactive", true)
+    //     .text("State");
 
-    // // Create group for y-axis labels
-    var yLabelsGroup = chartGroup.append("g")
-        .attr("transform", "rotate(-90)", `translate(${width}, ${height})`)
+    // // // Create group for y-axis labels
+    // var yLabelsGroup = chartGroup.append("g")
+    //     .attr("transform", "rotate(-90)", `translate(${width}, ${height})`)
 
-    var firstDoseLabel = yLabelsGroup.append("text")
-        .attr("x", -180)
-        .attr("y", -40)
-        .attr("value", "vax dose series 1") // value to grab for event listener
-        .classed("active", true)
-        .text("Vaccination Count (Dose 1)");
+    // var firstDoseLabel = yLabelsGroup.append("text")
+    //     .attr("x", -180)
+    //     .attr("y", -40)
+    //     .attr("value", "vax dose series 1") // value to grab for event listener
+    //     .classed("active", true)
+    //     .text("Vaccination Count (Dose 1)");
 
-    var secDoseLabel = yLabelsGroup.append("text")
-        .attr("x", -180)
-        .attr("y", -60)
-        .attr("value", "vax dose series 2") // value to grab for event listener
-        .classed("inactive", true)
-        .text("Vaccination Count (Dose 2)");
+    // var secDoseLabel = yLabelsGroup.append("text")
+    //     .attr("x", -180)
+    //     .attr("y", -60)
+    //     .attr("value", "vax dose series 2") // value to grab for event listener
+    //     .classed("inactive", true)
+    //     .text("Vaccination Count (Dose 2)");
 
-    // // x axis labels event listener
+    // x axis labels event listener
     // xLabelsGroup.selectAll("text")
     //     .on("click", function() {
     //     // get value of selection
@@ -219,47 +220,45 @@ d3.json("/us_vaccines").then((importedData) => {
     //         chosenXAxis = value;
 
     //         // updates x scale for new data
-    //         xLinearScale = xScale(health, chosenXAxis);
+    //         xLinearScale = xScale(importedData, chosenXAxis);
 
     //         // updates x axis with transition
     //         xAxis = renderXAxes(xLinearScale, xAxis);
 
-    //         // updates circles with new x values
-    //         circlesGroup = renderXCircles(circlesGroup, xLinearScale, chosenXAxis);
-
-    //         circleLabels = circleTextX(circleLabels, xLinearScale, chosenXAxis);
+    //         // updates bars with new x values
+    //         barsGroup = renderXBars(barsGroup, xLinearScale, chosenXAxis);
             
     //         // changes classes to change bold text
-    //         if (chosenXAxis === "income") {
-    //         incomeLabel
+    //         if (chosenXAxis === "age") {
+    //         ageLabel
     //             .classed("active", true)
     //             .classed("inactive", false);
-    //         povertyLabel
+    //         sexLabel
     //             .classed("active", false)
     //             .classed("inactive", true);
-    //         ageLabel
+    //         stateLabel
     //             .classed("active", false)
     //             .classed("inactive", true);
     //         }
-    //         else if (chosenXAxis === "poverty") {
-    //         incomeLabel
+    //         else if (chosenXAxis === "sex") {
+    //         ageLabel
     //             .classed("active", false)
     //             .classed("inactive", true);
-    //         povertyLabel
+    //         sexLabel
     //             .classed("active", true)
     //             .classed("inactive", false);
-    //         ageLabel
+    //         stateLabel
     //             .classed("active", false)
     //             .classed("inactive", true);
     //         }
     //         else {
-    //         incomeLabel
-    //             .classed("active", false)
-    //             .classed("inactive", true);
-    //         povertyLabel
-    //             .classed("active", false)
-    //             .classed("inactive", true);
     //         ageLabel
+    //             .classed("active", false)
+    //             .classed("inactive", true);
+    //         sexLabel
+    //             .classed("active", false)
+    //             .classed("inactive", true);
+    //         stateLabel
     //             .classed("active", true)
     //             .classed("inactive", false);
     //         }
@@ -276,52 +275,33 @@ d3.json("/us_vaccines").then((importedData) => {
     //     chosenYAxis = value;
 
     //     // updates x scale for new data
-    //     yLinearScale = yScale(health, chosenYAxis);
+    //     yLinearScale = yScale(importedData, chosenYAxis);
 
     //     // updates x axis with transition
     //     yAxis = renderYAxes(yLinearScale, yAxis);
 
-    //     // updates circles with new x values
-    //     circlesGroup = renderYCircles(circlesGroup, yLinearScale, chosenYAxis);
-
-    //     circleLabels = circleTextY(circleLabels, yLinearScale, chosenYAxis);
+    //     // updates bars with new x values
+    //     barsGroup = renderYBars(barsGroup, yLinearScale, chosenYAxis);
 
     //     // changes classes to change bold text
-    //     if (chosenYAxis === "healthcare") {
-    //         healthCareLabel
+    //     if (chosenYAxis === "vax dose series 1") {
+    //         firstDoseLabel
     //         .classed("active", true)
     //         .classed("inactive", false);
-    //         smokesLabel
-    //         .classed("active", false)
-    //         .classed("inactive", true);
-    //         obesityLabel
+    //         secDoseLabel
     //         .classed("active", false)
     //         .classed("inactive", true);
     //     }
-    //     else if (chosenYAxis === "smokes") {
-    //         healthCareLabel
+    //     else if (chosenYAxis === "vax dose series 2") {
+    //         firstDoseLabel
     //         .classed("active", false)
     //         .classed("inactive", true);
-    //         smokesLabel
-    //         .classed("active", true)
-    //         .classed("inactive", false);
-    //         obesityLabel
-    //         .classed("active", false)
-    //         .classed("inactive", true);
-    //     }
-    //     else {
-    //         healthCareLabel
-    //         .classed("active", false)
-    //         .classed("inactive", true);
-    //         smokesLabel
-    //         .classed("active", false)
-    //         .classed("inactive", true);
-    //         obesityLabel
+    //         secDoseLabel
     //         .classed("active", true)
     //         .classed("inactive", false);
     //     }
     //     }  
     // });
-    // }).catch(function(error) {
-    // console.log(error);
+    }).catch(function(error) {
+    console.log(error);
 })
