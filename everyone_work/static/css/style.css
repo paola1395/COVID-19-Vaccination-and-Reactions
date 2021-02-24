@@ -1,5 +1,6 @@
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/images/images5.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  /* , url("/images/images5.jpg" */
   background-position: 50% 50%;
   min-height: 877px;
 }
@@ -204,7 +205,7 @@
 }
 
 .u-section-2 .u-image-1 {
-  background-image: url("/images/images3.jpg");
+  /* background-image: url("/images/images3.jpg"); */
   transition-duration: 1.75s;
 }
 
@@ -490,7 +491,7 @@
 }
 
 .u-section-3 .u-image-1 {
-  background-image: url("/images/images4.jpg");
+  /* background-image: url("/images/images4.jpg"); */
   transition-duration: 1.25s;
 }
 
@@ -610,7 +611,7 @@
 .u-section-4 .u-image-1 {
   width: 200px;
   height: 200px;
-  background-image: url("/3d+html/static/images/leonard.jpeg");
+  /* background-image: url("/everyone_work/static/images/leonard.jpeg"); */
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -629,7 +630,7 @@
 .u-section-4 .u-image-2 {
   width: 200px;
   height: 200px;
-  background-image: url("/3d+html/static/images/yuying.png");
+  /* background-image: url("/everyone_work/static/images/yuying.png"); */
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -648,7 +649,7 @@
 .u-section-4 .u-image-3 {
   width: 200px;
   height: 200px;
-  background-image: url("/3d+html/static/images/paola.jpg");
+  /* background-image: url("/everyone_work/static/images/paola.jpg"); */
   background-position: 50% 0%;
   margin: 0 auto;
 }
@@ -667,7 +668,7 @@
 .u-section-4 .u-image-4 {
   width: 200px;
   height: 200px;
-  background-image: url("/3d+html/static/images/navi.jfif");
+  /* background-image: url("/everyone_work/static/images/navi.jfif"); */
   background-position: 50% 50%;
   margin: 0 auto;
 }
