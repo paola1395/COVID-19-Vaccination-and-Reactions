@@ -111,8 +111,8 @@ var margin = {
       // console.log(otherSeries);
   
       // Initial Params
-      var chosenXAxis = doseSeries1.length;
-      var chosenYAxis = 
+      var chosenXAxis = doseSeries1.length; DATA CATEGORIES
+      var chosenYAxis = DATA ARRAY
       // var subgroups = data.columns.slice(1,4)
       
       // xLinearScale function above csv import

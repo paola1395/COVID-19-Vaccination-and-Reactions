@@ -23,8 +23,30 @@ var svg = d3.select("body").append("svg")
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-// Import Data
+// create axes, function used to update x and y Axis upon click
+function renderXAxes(newXScale, xAxis) {
+    var bottomAxis = d3.axisBottom(newXScale);
   
+    xAxis.transition()
+      .duration(1000)
+      .call(bottomAxis);
+  
+    return xAxis;
+  }
+
+function renderYAxes(newYScale, yAxis) {
+    var leftAxis = d3.axisLeft(newYScale);
+  
+    yAxis.transition()
+      .duration(1000)
+      .call(leftAxis);
+  
+    return yAxis;
+  }
+
+
+// Import Data
+
 d3.json("/us_vaccines").then(function(importedData) {
   
     // parse the data
@@ -40,9 +62,10 @@ d3.json("/us_vaccines").then(function(importedData) {
 
 console.log(doseSeries1);
 
-      function chartData(series) {
-          var data = {};
-          series.map(obj => {
+// Retrieve unique data for state, sex, and age
+    function stateData(series) {
+        var data = {};
+        series.map(obj => {
             var state = obj.state
             if (data[state]) {
                 data[state]++
@@ -51,66 +74,262 @@ console.log(doseSeries1);
                 data[state] = 1
             }
         })
-        return data;
-      }
-// data
-var dataArray = Object.values(chartData(doseSeries1));
+    return data;
+    };
 
-// var dataCategories = ["one", "two", "three"];
-var dataCategories = Object.keys(chartData(doseSeries1));;
-// doseSeries1.map(obj => {
-//     var state = obj.state
-//     if (!dataCategories.includes(state)){
-//         dataCategories.push(state)
-//     }
-// })
+    //Default: Dose 1 vaccination count / States
+    var dataArray = Object.values(stateData(doseSeries1));
+    var dataCategories = Object.keys(stateData(doseSeries1));;
 
-// scale y to chart height
-var yScale = d3.scaleLinear()
-    .domain([0, d3.max(dataArray)])
-    .range([chartHeight, 0]);
 
-// scale x to chart width
-var xScale = d3.scaleBand()
-    .domain(dataCategories)
-    .range([0, chartWidth])
-    .padding(0.1);
+    // function used for updating x-scale var upon click on axis label
+    function xScale(importedData, dataCategories) {
+        // create x scales
+        var xLinearScale = d3.scaleBand()
+            .domain([d3.min(importedData, d => d[dataCategories])* 0.9,
+            d3.max(importedData, d => d[dataCategories]*1.05)
+        ])
+        .range([0, chartWidth])
+        .padding([0.2]);
+  
+    return xLinearScale;
+    }
+    
+    // function used for updating y-scale var upon click on axis label
+    function yScale (importedData, dataArray) {
+        // create y scales
+        var yLinearScale = d3.scaleLinear()
+            .domain([d3.min(importedData, d => d[dataArray]-2),
+            d3.max(importedData, d => d[dataArray]*1.1)
+        ])
+      .range([chartHeight, 0]);
+  
+    return yLinearScale;
+    }
+    
+    
+    // // Create initial axis functions
+    var bottomAxis = d3.axisBottom(xScale);
+    var leftAxis = d3.axisLeft(yScale);
 
-// create axes
-var yAxis = d3.axisLeft(yScale);
-var xAxis = d3.axisBottom(xScale);
+    // set x to the bottom of the chart
+    var xAxis = chartGroup.append("g")
+        .classed("x-axis", true)
+        .attr("transform", `translate(0, ${chartHeight})`)
+        .call(bottomAxis);
 
-// set x to the bottom of the chart
-chartGroup.append("g")
-    .attr("transform", `translate(0, ${chartHeight})`)
-    .call(xAxis);
+    // set y to the y axis 
+    var yAxis = chartGroup.append("g")
+        .call(leftAxis);
 
-// set y to the y axis
-chartGroup.append("g")
-    .call(yAxis);
+    // Create the rectangles using data binding
+    var barsGroup = chartGroup.selectAll("rect")
+        .data(dataArray)
+        .enter()
+        .append("rect")
+        .attr("x", (d, i) => xLinearScale(d[dataCategories[i]]))
+        .attr("y", d => yLinearScale(d))
+        .attr("width", xScale.bandwidth())
+        .attr("height", d => chartHeight - yScale(d))
+        .attr("fill", "green");
 
-// Create the rectangles using data binding
-var barsGroup = chartGroup.selectAll("rect")
-    .data(dataArray)
-    .enter()
-    .append("rect")
-    .attr("x", (d, i) => xScale(dataCategories[i]))
-    .attr("y", d => yScale(d))
-    .attr("width", xScale.bandwidth())
-    .attr("height", d => chartHeight - yScale(d))
-    .attr("fill", "green");
 
-// Create the event listeners with transitions
-barsGroup.on("mouseover", function() {
-  d3.select(this)
-            .transition()
-            .duration(1500)
-            .attr("fill", "red");
-})
-    .on("mouseout", function() {
-      d3.select(this)
-            .transition()
-            .duration(1500)
-            .attr("fill", "green");
+    
+    
+    // function used for updating bars group with a transition to
+    // new bars
+    function renderXBars(barsGroup, newXScale, dataCategories) {
+        barsGroup.transition()
+        .duration(1000)
+        .attr("x", d => newXScale(d[dataCategories]));
+        
+        return barsGroup;
+    }
+    
+    function renderYBars(barsGroup, newYScale, dataArray) {
+        barsGroup.transition()
+        .duration(1000)
+        .attr("y", d => newYScale(d[dataArray]));
+    
+        return barsGroup;
+    }
+
+
+
+    // Create group for x-axis labels
+    var xLabelsGroup = chartGroup.append("g")
+    .attr("transform", `translate(${width / 2}, ${height + 20})`);
+
+    var stateLabel = xLabelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 60)
+    .attr("value", "state") // value to grab for event listener
+    .classed("active", true)
+    .text("State");
+
+    var sexLabel = xLabelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 40)
+    .attr("value", "sex") // value to grab for event listener
+    .classed("inactive", true)
+    .text("Sex");
+
+    var ageLabel = xLabelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 20)
+    .attr("value", "age") // value to grab for event listener
+    .classed("inactive", true)
+    .text("Age");
+
+    // // Create group for y-axis labels
+    var yLabelsGroup = chartGroup.append("g")
+    .attr("transform", "rotate(-90)", `translate(${width}, ${height})`)
+
+    var firstDoseLabel = yLabelsGroup.append("text")
+    .attr("x", -180)
+    .attr("y", -40)
+    .attr("value", doseSeries1) // value to grab for event listener
+    .classed("active", true)
+    .text("Vaccination Count (Dose 1)");
+
+    var secDoseLabel = yLabelsGroup.append("text")
+    .attr("x", -180)
+    .attr("y", -60)
+    .attr("value", doseSeries2) // value to grab for event listener
+    .classed("inactive", true)
+    .text("Vaccination Count (Dose 2)");
+
+    var otherDoseLabel = yLabelsGroup.append("text")
+    .attr("x", -180)
+    .attr("y", -60)
+    .attr("value", otherSeries) // value to grab for event listener
+    .classed("inactive", true)
+    .text("Vaccination Count (Uncategorized)");
+
+    // x axis labels event listener
+    xLabelsGroup.selectAll("text")
+        .on("click", function() {
+        // get value of selection
+        var value = d3.select(this).attr("value");
+        if (value !== dataCategories) {
+
+            // replaces chosenXAxis with value
+            dataCategories = value;
+
+            // updates x scale for new data
+            xLinearScale = xScale(importedData, dataCategories);
+
+            // updates x axis with transition
+            xAxis = renderXAxes(xLinearScale, xAxis);
+
+            // updates bars with new x values
+            barsGroup = renderXBars(barsGroup, xLinearScale, dataCategories);
+            
+            // changes classes to change bold text
+            if (chosenXAxis === "age") {
+            stateLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            sexLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            ageLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            }
+            else if (chosenXAxis === "sex") {
+            stateLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            sexLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            ageLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            }
+            else {
+            stateLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            sexLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            ageLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            }
+    }  
     });
-})
+
+    yLabelsGroup.selectAll("text")
+        .on("click", function() {
+        // get value of selection
+        var value = d3.select(this).attr("value");
+        if (value !== dataArray) {
+
+        // replaces chosenXAxis with value
+            dataArray = value;
+
+            // updates x scale for new data
+            yLinearScale = yScale(importedData, dataArray);
+
+            // updates x axis with transition
+            yAxis = renderYAxes(yLinearScale, yAxis);
+
+            // updates bars with new x values
+            barsGroup = renderYBars(barsGroup, yLinearScale, chosenYAxis);
+
+            // changes classes to change bold text
+            if (chosenYAxis === doseSeries1) {
+            firstDoseLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            secDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            otherDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            }
+            else if (chosenYAxis === doseSeries2) {
+            firstDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            secDoseLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            otherDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            }
+            else {
+            firstDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            secDoseLabel
+                .classed("active", false)
+                .classed("inactive", true);
+            otherDoseLabel
+                .classed("active", true)
+                .classed("inactive", false);
+            }
+        }  
+    });
+
+
+
+// // Create the event listeners with transitions
+// barsGroup.on("mouseover", function() {
+//   d3.select(this)
+//             .transition()
+//             .duration(1500)
+//             .attr("fill", "red");
+// })
+//     .on("mouseout", function() {
+//       d3.select(this)
+//             .transition()
+//             .duration(1500)
+//             .attr("fill", "green");
+//     });
+});
