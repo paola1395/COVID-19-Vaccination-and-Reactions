@@ -31,13 +31,13 @@ app= Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-# @app.route("/graph")
-# def bargraph():
-#     return render_template("index2.html")
-
-@app.route("/test")
-def testgraph():
+@app.route("/graph")
+def bargraph():
     return render_template("index2.html")
+
+# @app.route("/test")
+# def testgraph():
+#     return render_template("index2.html")
 
 #US DATA PAGE
 @ app.route("/us_vaccines")
