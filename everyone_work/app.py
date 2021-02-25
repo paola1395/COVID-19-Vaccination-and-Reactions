@@ -74,6 +74,10 @@ def us_vaccines():
 
     return jsonify(patients)
 
+@app.route("/summary")
+def summary():
+    return render_template("summary.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
