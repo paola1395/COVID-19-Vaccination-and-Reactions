@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 ####################################
 from sqlalchemy.ext.automap import automap_base
 
-engine = create_engine('sqlite:///../static/data/VAERS.sqlite', echo=False)
+engine = create_engine('sqlite:///static/data/VAERS.sqlite', echo=False)
 Base= automap_base()
 Base.prepare(engine, reflect=True)
 
@@ -35,18 +35,14 @@ def homepage():
 def geomap():
     return render_template("leaflet.html")
 
-# Plotly
-@app.route("/plotly")
-def plotly():
-    return render_template("plotly1.html")
+# # Plotly
+# @app.route("/plotly")
+# def plotly():
+#     return render_template("plotly1.html")
 
 @app.route("/graph")
 def bargraph():
-    return render_template("plotly2.html")
-
-# @app.route("/test")
-# def testgraph():
-#     return render_template("index2.html")
+    return render_template("bar.html")
 
 #US DATA PAGE
 @ app.route("/us_vaccines")

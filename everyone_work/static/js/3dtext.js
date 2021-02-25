@@ -1,13 +1,13 @@
 // Made with Zdog
 
-let ill = new Zdog.Illustration({
+let illo = new Zdog.Illustration({
   element: '.zdog-text',
   // rotate: { x: -Zdog.TAU/16 },
   dragRotate: true
 });
 
 var textGroup = new Zdog.Anchor({
-  addTo: ill
+  addTo: illo
 });
 
 var cLetter = new Zdog.Ellipse({

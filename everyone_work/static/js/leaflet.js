@@ -1,4 +1,4 @@
-const link = "../static/data/dataset.geojson";
+const link = "static/data/dataset.geojson";
 const boundaryLink = "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson";
 
 var myMap = L.map("map", {
@@ -38,64 +38,45 @@ function chooseColor (x) {
     return color;
 }
 
-// d3.json(boundaryLink, function(b){
-//     var all_coord = b.features;
-//     d3.json(link, function(data){
-//         data.features.forEach(element => {
-//             var extra = all_coord.filter(d=>d.properties.ISO_A3===element.properties.iso_code);
-//             console.log(extra.map(d=>d.geometry));
-//             element.properties.extra = extra.map(d=>d.geometry);
-//             console.log(element.properties);
-//             L.geoJSON(element.properties.extra).addTo(myMap);
-            
-                 
-//         })
-//     })
-// })
-
-d3.json(link, function(data){
-    // console.log(data.features);
-    var all_features = data.features;
-    d3.json(boundaryLink, function(boundary) {
-        // console.log(boundary);
-        boundary.features.forEach(element => {
-            var extra = all_features.filter(d=>d.properties.iso_code===element.properties.ISO_A3);
-            element.properties.extra = extra.map(d=>d.properties);
-            coords = extra.map(d=>d.geometry);
-            console.log(coords);
-            // console.log(element.properties);    
-            // L.geoJSON(bounary, {
-            //     style: function(feature) {
-            //         return {
-            //             color: "blue",
-            //             weight: 1.5,
-            //             fillOpacity: 0.5,
-            //             fillColor: chooseColor(element.properties.people_fully_vaccinated)
-            //         } 
-            //     },
-            //     onEachFeature: function(feature, layer) {
-            //         layer.on({
-            //             mouseover: function(event) {
-            //                 layer = event.target;
-            //                 layer.setStyle({
-            //                     fillOpacity: 0.9
-            //                 });
-            //             },
-            //             mouseout: function(event) {
-            //                 layer = event.target;
-            //                 layer.setStyle({
-            //                     fillOpacity: 0.5
-            //                 });
-            //             },
-            //             click: function(event) {
-            //                 myMap.fitBounds(event.target.getBounds());
-            //             }
-            //         });
-            //         layer.bindPopup(element.properties.location + "<hr> " + element.properties.people_fully_vaccinated);
-            //     },
-            // }).addTo(myMap);
-        })          
-    });
-    
+d3.json(boundaryLink, function(b){
+    var all_coord = b.features;
+    console.log(all_coord);
+    d3.json(link, function(data){
+        data.features.forEach(element => {
+            var extra = all_coord.filter(d=>d.properties.ISO_A3===element.properties.iso_code);
+            // console.log(extra);
+            element.properties.extra = extra.map(d=>d.geometry);
+            console.log(element.properties);
+            L.geoJSON(element.properties.extra, {
+                style: function(feature) {
+                    return {
+                        color: "blue",
+                        weight: 1.5,
+                        fillOpacity: 0.5,
+                        fillColor: chooseColor(element.properties.people_fully_vaccinated)
+                    }
+                },
+                onEachFeature: function(feature, layer) {
+                    layer.on({
+                        mouseover: function(event) {
+                            layer = event.target;
+                            layer.setStyle({
+                                fillOpacity: 0.9
+                            });
+                        },
+                        mouseout: function(event) {
+                            layer = event.target;
+                            layer.setStyle({
+                                fillOpacity: 0.5
+                            });
+                        },
+                        click: function(event) {
+                            myMap.fitBounds(event.target.getBounds());
+                        }
+                    });
+                    layer.bindPopup(element.properties.location + "<hr> " + element.properties.people_fully_vaccinated);
+                }, 
+            }).addTo(myMap);               
+        })
+    })
 })
-
