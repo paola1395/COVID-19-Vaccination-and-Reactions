@@ -17,7 +17,7 @@ var cLetter = new Zdog.Ellipse({
   stroke: 10,
   translate: { z: 10 },
   rotate: {y: -9.5, x: -9.5, z: 30.5},
-  color: 'white',
+  color: 'rgb(34, 189, 236)',
 });
 
 var vLetter = new Zdog.Shape({
@@ -35,7 +35,7 @@ var vLetter = new Zdog.Shape({
   ],
   closed: false,
   stroke: 10,
-  color: 'white',
+  color: 'rgb(34, 189, 236)',
 });
 
 
@@ -52,7 +52,7 @@ var partOneR = new Zdog.Shape({
   ],
   closed: false,
   stroke: 10,
-  color: 'white',
+  color: 'rgb(34, 189, 236)',
 });
 // 19, 9.4
 var partTwoR = new Zdog.Ellipse({
@@ -63,7 +63,7 @@ var partTwoR = new Zdog.Ellipse({
   diameter: 50,
   quarters: 3,
   stroke: 10,
-  color: 'white',
+  color: 'rgb(34, 189, 236)',
 });
 
 var partThreeR = new Zdog.Shape({
@@ -79,7 +79,7 @@ var partThreeR = new Zdog.Shape({
   ],
   closed: false,
   stroke: 10,
-  color: 'white',
+  color: 'rgb(34, 189, 236)',
 });
 
 function animate() {
