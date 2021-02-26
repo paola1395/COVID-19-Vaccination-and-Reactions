@@ -159,3 +159,119 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 //     });
     
 // })
+
+// Working codes below for grabing data and unique country code for geojson
+
+// d3.json(boundaryLink, function(b){
+//     var all_coord = b.features;
+//     // console.log(all_coord);
+//     d3.json(link, function(data){
+//         var dataAll = data.features;
+//         var desiredDate = dataAll.filter(d=>d.properties.date === "2021-01-18");
+//         // all_data = []
+//         // all_iso = []
+//         // data.features.forEach(d=>{
+//         //     if(!all_iso.includes(d.properties.iso_code)) {
+//         //         all_iso.push(d.properties.iso_code);
+//         //         all_data.push(d)
+//         //     }       
+//         // });
+//         console.log(desiredDate);
+//         // console.log(data.features);
+//         desiredDate.forEach(element => {
+//             var extra = all_coord.filter(d=>d.properties.ISO_A3===element.properties.iso_code);
+//             element.properties.extra = extra.map(d=>d.geometry);
+//             console.log(element.properties);
+//             L.geoJSON(element.properties.extra, {
+//                 style: function(feature) {
+//                     return {
+//                         color: "white",
+//                         weight: 1.5,
+//                         fillOpacity: 0.5,
+//                         fillColor: chooseColor(element.properties.people_fully_vaccinated)
+//                     }
+//                 },
+//                 onEachFeature: function(feature, layer) {
+//                     layer.on({
+//                         mouseover: function(event) {
+//                             layer = event.target;
+//                             layer.setStyle({
+//                                 fillOpacity: 0.9
+//                             });
+//                         },
+//                         mouseout: function(event) {
+//                             layer = event.target;
+//                             layer.setStyle({
+//                                 fillOpacity: 0.5
+//                             });
+//                         },
+//                         click: function(event) {
+//                             myMap.fitBounds(event.target.getBounds());
+//                         }
+//                     });
+//                     layer.bindPopup(element.properties.location + "<hr> " + element.properties.people_fully_vaccinated);
+//                 }, 
+//             }).addTo(jan18);               
+//         })
+//     })
+// })
+
+// Layer for total deaths
+// var jan25 = L.layerGroup();
+
+// d3.json(boundaryLink, function(b){
+//     var all_coord = b.features;
+//     // console.log(all_coord);
+//     d3.json(link, function(data){
+//         var dataAll = data.features;
+//         var desiredDate = dataAll.filter(d=>d.properties.date === "2021-01-25");
+    //     all_dates = {}
+    //     all_data = []
+    //     all_iso = []
+    //     data.features.forEach(d=>{
+    //         if(!all_iso.includes(d.properties.iso_code)) {
+    //             all_iso.push(d.properties.iso_code);
+    //             all_data.push(d)
+    //         }
+    //         if(typeof all_dates[d.properties.date] === "undefined") all_dates[d.properties.date]=[];
+    //         all_dates[d.properties.date].push(d);
+            
+    //     });
+        // console.log(all_dates);
+        // console.log(data.features);
+//         desiredDate.forEach(element => {
+//             var extra = all_coord.filter(d=>d.properties.ISO_A3===element.properties.iso_code);
+//             element.properties.extra = extra.map(d=>d.geometry);
+//             L.geoJSON(element.properties.extra, {
+//                 style: function(feature) {
+//                     return {
+//                         color: "white",
+//                         weight: 1.5,
+//                         fillOpacity: 0.5,
+//                         fillColor: chooseColor(element.properties.total_deaths)
+//                     }
+//                 },
+//                 onEachFeature: function(feature, layer) {
+//                     layer.on({
+//                         mouseover: function(event) {
+//                             layer = event.target;
+//                             layer.setStyle({
+//                                 fillOpacity: 0.9
+//                             });
+//                         },
+//                         mouseout: function(event) {
+//                             layer = event.target;
+//                             layer.setStyle({
+//                                 fillOpacity: 0.5
+//                             });
+//                         },
+//                         click: function(event) {
+//                             myMap.fitBounds(event.target.getBounds());
+//                         }
+//                     });
+//                     layer.bindPopup(element.properties.location + "<hr> " + element.properties.people_fully_vaccinated);
+//                 }, 
+//             }).addTo(jan25);               
+//         })
+//     })
+// })
