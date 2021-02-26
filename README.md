@@ -34,7 +34,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 |         Strenghts               | Limitations |
 |------------------------------------|------------------------------------|
 | National Data | Reporting bias |
-| Data aviable to public | Inconsistent data quality and completeness	|
+| Data available to public | Inconsistent data quality and completeness	|
 | Collects information about vaccine, characteristics of patient vaccinated, adverse event | No unvaccindated comparison group |
 | VAERS is a tool for identifying potential vaccine safety concerns that need further study using more robust data systems | Cannot calculate how often adverse events occur |
 | Rapid signal detection for rease adverse events | Generally cannnot assess if vaccine caused an adverse event	|
