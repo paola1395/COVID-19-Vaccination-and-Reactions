@@ -1,9 +1,9 @@
-## Covid19 Global Vaccine + Adverse Reactions
+# Covid19 Vaccinations & Adverse Reactions
 
 ![COVID-Vaccine](Images/Images3.jpg)
 
-### Motivation:
-
+## Motivation:
+The novel coronavirus disease (COVID-19)—which emerged in Wuhan, China, in November 2019—has grown into a global threat and was eventually declared a global pandemic. It has seriously impacted the lives of many and caused numerous deaths, caused by the novel SARS-CoV-2 virus. CVR team further examined the effects and benefits of COVID-19 Vaccines globally.  
 
 ### Project Description/Outline:
 ## Definitions
@@ -28,6 +28,16 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 |  Moderna |  EMA |  subsequently | for emergency use  |
 |  Oxford/AstraZeneca |  EMA |  2021-01-29 | for emergency use  |
 
+### Liminations + Strenghts (VASERS - Vaccine Adverse Event Reporting System)
+
+
+|         Strenghts               | Limitations |
+|------------------------------------|------------------------------------|
+| National Data | Reporting bias |
+| Data aviable to public | Inconsistent data quality and completeness	|
+| Collects information about vaccine, characteristics of patient vaccinated, adverse event | No unvaccindated comparison group |
+| VAERS is a tool for identifying potential vaccine safety concerns that need further study using more robust data systems | Cannot calculate how often adverse events occur |
+| Rapid signal detection for rease adverse events | Generally cannnot assess if vaccine caused an adverse event	|
 
 
 ### Research Questions to Answer:
@@ -90,3 +100,4 @@ Track COVID-19 vaccination in the World, answer questions:
 * [Leonard Zhao](https://github.com/leonardz17): Leaflet and plotly
 * [Paola Lopez](https://github.com/paola1395): Python Flask
 * [Yuying Hong](https://github.com/yuyhong23): Data cleaning, one extra JS library→ animation
+
