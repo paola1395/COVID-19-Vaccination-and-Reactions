@@ -32,7 +32,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 | JNJ-78436735 (formerly Ad26.COV2.S)| Non-replicating viral vector | Janssen Vaccines (Johnson & Johnson) | The Netherlands, US |
 | Comirnaty (BNT162b2)| mRNA-based vaccine | Pfizer, BioNTech; Fosun Pharma | Multinational |
 
-### Limitations + Strenghts (VASERS - Vaccine Adverse Event Reporting System)
+### Limitations + Strengths (VASERS - Vaccine Adverse Event Reporting System)
 
 
 |         Strenghts               | Limitations |
