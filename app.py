@@ -1,6 +1,7 @@
 import sqlalchemy
 from sqlalchemy import create_engine, func, desc
 from sqlalchemy.orm import Session
+import sqlite3
 
 
 ####################################
@@ -30,6 +31,47 @@ app= Flask(__name__)
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
+@app.route("/dose1data")
+def onedata():
+    conn = sqlite3.connect("Data/doseOneSymptoms.db")
+    cur = conn.cursor()
+    dose_one_info = cur.execute("select * from 'doseOneSymptoms';")
+    results = dose_one_info.fetchall()
+    conn.close()
+
+    # import numpy as np
+    # # Convert list of tuples into normal list
+    # dose_one_results = list(np.ravel(results))
+    
+    return jsonify(results)
+
+
+# @app.route("/dose2data")
+# def twodata():
+#     conn = sqlite3.connect("Data/doseTwoSymptoms.db")
+#     cur = conn.cursor()
+#     dose_two_info = cur.execute("select * from 'doseTwoSymptoms';")
+#     results = dose_two_info.fetchall()
+#     conn.close()
+
+#     import numpy as np
+#     dose_two_results = list(np.ravel(results))
+    
+#     return jsonify(dose_two_results)
+
+# @app.route("/otherdosedata")
+# def otherdata():
+#     conn = sqlite3.connect("Data/doseUnkSymptoms.db")
+#     cur = conn.cursor()
+#     dose_unk_info = cur.execute("select * from 'doseUnkSymptoms';")
+#     results = dose_unk_info.fetchall()
+#     conn.close()
+
+#     import numpy as np
+#     dose_unk_results = list(np.ravel(results))
+    
+#     return jsonify(dose_unk_results)
 
 @app.route("/graph")
 def bargraph():

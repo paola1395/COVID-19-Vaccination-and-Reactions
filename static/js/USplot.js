@@ -1,149 +1,64 @@
 // Use d3.json() to fetch data from JSON file
-// Incoming data is internally referred to as incomingData
+// function unpack(rows, index) {
+//     return rows.map(function(row) {
+//       return row[index];
+//     });
+//   }
 
-    // var sympOne = data.symptom1;
-    // var sympTwo = data.symptom2;
-    // var sympThree = data.symptom3;
-    // var sympFour = data.symptom4;
-    // var sympFive = data.symptom5;
+// function getData() {
+//     d3.json("/dose1data").then(function(data) {
+//         var symptom = unpack(data.dataset.data, 1);
+//         var sympCount = unpack(data.dataset.data, 2);
 
-//     function sympOneData(series) {
-//         var data = {};
-//         series.map(obj => {
-//             var sympOne = obj.sympOne
-//             if (data[sympOne]) {
-//                 data[sympOne]++
-//             }
-//             else {
-//                 data[sympOne] = 1
-//             }
-//         })
-//     return data;
-//     }
+// }
 
-d3.json("/us_vaccines").then(function(data) {
-    console.log(data);
-})
- 
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // var doseSeries1 = data.filter(obj => obj.vax_dose_series === "1");
-        // var doseSeries2 = data.filter(obj => obj.vax_dose_series === "2");
-        // var otherSeries = data.filter(obj => !obj.vax_dose_series);
-    
-    //     function sympOne(series) {
-    //         var data = {};
-    //         series.map(obj => {
-    //             var sympOne = obj.sympOne
-    //             if (data[sympOne]) {
-    //                 data[sympOne]++
-    //             }
-    //             else {
-    //                 data[sympOne] = 1
-    //             }
-    //         })
-    //     return data;
-    //     };
 
-    //     function sympTwo(series) {
-    //         var data = {};
-    //         series.map(obj => {
-    //             var sympTwo = obj.sympTwo
-    //             if (data[sympTwo]) {
-    //                 data[sympTwo]++
-    //             }
-    //             else {
-    //                 data[sympTwo] = 1
-    //             }
-    //         })
-    //     return data;
-    //     };
 
-    //     function sympThree(series) {
-    //         var data = {};
-    //         series.map(obj => {
-    //             var sympThree = obj.sympThree
-    //             if (data[sympThree]) {
-    //                 data[sympThree]++
-    //             }
-    //             else {
-    //                 data[sympThree] = 1
-    //             }
-    //         })
-    //     return data;
-    //     };
+d3.json("/dose1data").then(function(data) {
+    var topSymptoms = data.slice(0, 5);
 
-    //     function sympFour(series) {
-    //         var data = {};
-    //         series.map(obj => {
-    //             var sympFour = obj.sympFour
-    //             if (data[sympFour]) {
-    //                 data[sympFour]++
-    //             }
-    //             else {
-    //                 data[sympFour] = 1
-    //             }
-    //         })
-    //     return data;
-    //     };
+    function sympData(series) {
+        var sympList = [];
+        series.map(obj => {
+            var symptom = obj.symptom
+            if (sympList[symptom]) {
+                sympList.push(symptom)
+            }
+            else {
+                !sympList.push(symptom)
+            }
+        })
+    return sympList;
+    };
 
-    //     function sympFive(series) {
-    //         var data = {};
-    //         series.map(obj => {
-    //             var sympFive = obj.sympFive
-    //             if (data[sympFive]) {
-    //                 data[sympFive]++
-    //             }
-    //             else {
-    //                 data[sympFive] = 1
-    //             }
-    //         })
-    //     return data;
-    //     };
+    // function sympData(series) {
+    //     var sympList = [];
+    //     series.map(obj => {
+    //         var symptom = obj[0][1]
+    //         if (sympList[symptom]) {
+    //             sympList.push(symptom)
+    //         }
+    //         else {
+    //             !sympList.push(symptom)
+    //         }
+    //     })
+    // return sympList;
+    // };
 
-    //     var sympOneArray = Object.values(sympOne(doseSeries1));
-    //     var sympTwoArray = Object.values(sympTwo(doseSeries1));
-    //     var sympThreeArray = Object.values(sympThree(doseSeries1));
-    //     var sympFourArray = Object.values(sympFour(doseSeries1));
-    //     var sympFiveArray = Object.values(sympFive(doseSeries1));
+    // var topSymptom = Object.keys(sympData(topSymptoms));
+    console.log(Object.keys(data));
 
-    //     const allSymp = [sympOneArray, sympTwoArray, sympThreeArray, sympFourArray, sympFiveArray].reduce((acc, el) => {
-    //         for (let key in el) {
-    //           acc[key] = [...acc[key] || [], el[key]];
-    //         };
-    //         return acc;
-    //       }, {})
-          
-    // console.log(allSymp);
+});
 
         
-        // Creating an array of Dose 1/2/other symptom data
-        // var doseOneData = Object.values(symptomData(doseSeries1));
-        // var doseTwoData = Object.values(symptomData(doseSeries2));
-        // var otherDoseData = Object.values(symptomData(otherSeries));
-        // var labels = Object.keys(symptomData(doseSeries1))
+    
+    
+    
+    
+    
+    
+    
 
-        // console.log(doseOneData);
-        
-
-
-
-    
-    
-    
-    
-    
     
 //         // Extract the sample_values from the filtered id samples data
 //     // Use slice to get the top 10 OTU values found in that individual
@@ -205,68 +120,5 @@ d3.json("/us_vaccines").then(function(data) {
    
    
 //    Plotly.newPlot("bubble", data2, layout);
-//   }
-
-
-
-
-
-
-
-
-
-
-
-// console.log(sympOneData);
-
-    // function sympTwoData(series) {
-    //     var data = {};
-    //     series.map(obj => {
-    //         var sympOne = obj.sympOne
-    //         if (data[sympOne]) {
-    //             data[sympOne]++
-    //         }
-    //         else {
-    //             data[sympOne] = 1
-    //         }
-    //     })
-    // return data;
-    
-
-
-
-// Initializes the page with a default plot & sets up dropdown
-// function init() {
-//     d3.json("/us_vaccines").then(function(data) {
-//         // var sympOne = data.symptom1;
-//         // var sympTwo = data.symptom2;
-//         // var sympThree = data.symptom3;
-//         // var sympFour = data.symptom4;
-//         // var sympFive = data.symptom5;
-//         var vaxDoses = data.vax_dose_series
-//         var idNum = data.id
-
-//         // Append options to the dropdown menu
-//         vaxDoses.forEach(x => {
-//             var dropDown = d3.select("#selDataset");
-//             var selectOption = dropDown.append("option");
-//             selectOption.attr("value", x).text(x)
-//         })
-        
-//         // Call the optionChanged function to show the first ID's charts
-//         optionChanged(idNum[0])
-//     });
-//   }
-
-// // Data used for chart DROPDOWN DOSE 1/2/UNKNOWN
-// d3.json("/us_vaccines").then((importedData) => {
-//     console.log(importedData);
-// })
-
-
-
-
-
-
-
+//   
 
