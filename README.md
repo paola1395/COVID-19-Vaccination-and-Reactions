@@ -30,7 +30,8 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 | COVID-19 Vaccine AstraZeneca (AZD1222); also known as Covishield| Adenovirus vaccine | BARDA, OWS | UK |
 | EpiVacCorona| Peptide vaccine | Federal Budgetary Research Institution State Research Center of Virology and Biotechnology| Russia |
 | JNJ-78436735 (formerly Ad26.COV2.S)| Non-replicating viral vector | Janssen Vaccines (Johnson & Johnson) | The Netherlands, US |
-| Comirnaty (BNT162b2)| mRNA-based vaccine | Pfizer, BioNTech; Fosun Pharma | Multinational |
+| Moderna COVID‑19 Vaccine (mRNA-1273)| mRNA-based vaccine | Moderna, BARDA, NIAID | US |
+| Sputnik V | Recombinant adenovirus vaccine (rAd26 and rAd5) | Gamaleya Research Institute, Acellena Contract Drug Research and Development | Russia |
 
 ### Limitations + Strengths (VASERS - Vaccine Adverse Event Reporting System)
 
