@@ -28,7 +28,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 |  Moderna |  EMA |  subsequently | for emergency use  |
 |  Oxford/AstraZeneca |  EMA |  2021-01-29 | for emergency use  |
 
-### Liminations + Strenghts (VASERS - Vaccine Adverse Event Reporting System)
+### Limitations + Strenghts (VASERS - Vaccine Adverse Event Reporting System)
 
 
 |         Strenghts               | Limitations |
