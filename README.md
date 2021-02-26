@@ -1,4 +1,4 @@
-# Covid19 Vaccinations & Adverse Reactions
+# Covid19 Global Vaccinations & Adverse Reactions
 
 ![COVID-Vaccine](Images/Images3.jpg)
 
