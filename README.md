@@ -20,13 +20,17 @@ Each country has their own national regulatory authorities (NRA) responsible for
 
 We will also classify a vaccine as approved if one of these two bodies greenlights a new vaccine on their ["emergency use listing"](https://www.who.int/news-room/q-a-detail/coronavirus-disease-use-of-emergency-use-listing-procedure-forvaccines-against-covid-19), or if the [WHO](https://www.who.int/teams/regulation-prequalification/eul/covid-19) does so. 
 
-| Vaccine Candidate  | Approved by  |  on |  notes |
-|------------------|------|-------------|--------------------|
-|  BioNTech-Pfizer |  FDA |  2020-12-12 | for emergency use  |
-|  BioNTech-Pfizer |  EMA |  subsequently | for emergency use  |
-|  Moderna |  FDA |  2020-12-19 | for emergency use  |
-|  Moderna |  EMA |  subsequently | for emergency use  |
-|  Oxford/AstraZeneca |  EMA |  2021-01-29 | for emergency use  |
+### Globally Authorized Vaccines
+
+
+|         Name              | Vaccine Type | Primary Developer | Country of Origin |
+|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| Comirnaty (BNT162b2)| mRNA-based vaccine | Pfizer, BioNTech; Fosun Pharma | Multinational |
+| Convidicea (Ad5-nCoV)| Recombinant vaccine (adenovirus type 5 vector) | CanSino Biologics | China |
+| COVID-19 Vaccine AstraZeneca (AZD1222); also known as Covishield| Adenovirus vaccine | BARDA, OWS | UK |
+| EpiVacCorona| Peptide vaccine | Federal Budgetary Research Institution State Research Center of Virology and Biotechnology| Russia |
+| JNJ-78436735 (formerly Ad26.COV2.S)| Non-replicating viral vector | Janssen Vaccines (Johnson & Johnson) | The Netherlands, US |
+| Comirnaty (BNT162b2)| mRNA-based vaccine | Pfizer, BioNTech; Fosun Pharma | Multinational |
 
 ### Limitations + Strenghts (VASERS - Vaccine Adverse Event Reporting System)
 
