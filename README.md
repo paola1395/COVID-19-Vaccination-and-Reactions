@@ -35,7 +35,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 ### Limitations + Strengths (VASERS - Vaccine Adverse Event Reporting System)
 
 
-|         Strenghts               | Limitations |
+|         Strengths               | Limitations |
 |------------------------------------|------------------------------------|
 | National Data | Reporting bias |
 | Data available to public | Inconsistent data quality and completeness	|
