@@ -99,5 +99,5 @@ Track COVID-19 vaccination in the World, answer questions:
 * [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `HTML5`/`'CSS3`/`Bootstrap`
 * [Leonard Zhao](https://github.com/leonardz17): `Leaflet` and `plotly`
 * [Paola Lopez](https://github.com/paola1395): `Python` `Flask`
-* [Yuying Hong](https://github.com/yuyhong23): Data cleaning`, one extra `JS library`→ animation
+* [Yuying Hong](https://github.com/yuyhong23): `Data cleaning`, one extra `JS library`→ animation
 
