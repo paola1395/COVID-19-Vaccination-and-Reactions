@@ -55,12 +55,13 @@ d3.json("/us_vaccines").then(function(importedData) {
         data.vax_dose_series = +data.vax_dose_series;
         ;
       })
-    
+    var totalVacc = importedData.data.vax_dose_series
+    console.log(totalVacc);
     var doseSeries1 = importedData.filter(obj => obj.vax_dose_series === 1);
     var doseSeries2 = importedData.filter(obj => obj.vax_dose_series === 2);
     var otherSeries = importedData.filter(obj => !obj.vax_dose_series);
 
-console.log(doseSeries1);
+// console.log(doseSeries1);
 
 // Retrieve unique data for state, sex, and age
     function stateData(series) {
