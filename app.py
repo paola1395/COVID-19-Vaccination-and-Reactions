@@ -73,6 +73,10 @@ def otherdata():
     
     return jsonify(results)
 
+# @app.route("/graph")
+# def bargraph():
+#     return render_template("index2.html")
+
 @app.route("/graph")
 def bargraph():
     return render_template("index2.html")

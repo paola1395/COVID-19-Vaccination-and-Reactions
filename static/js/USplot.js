@@ -123,10 +123,10 @@ d3.json("/otherdosedata").then(function(data) {
 
 
 
-//     // Bubble Chart Values
-//     // Get all sample values
-//     var bubble_samples = filteredSamples.map(x=>x.sample_values)[0];
-//     console.log(bubble_samples);
+    // Bubble Chart Values
+    // Get all sample values
+    var bubble_symptoms = filteredSamples.map(x=>x.sample_values)[0];
+    console.log(bubble_symptoms);
 
 //     // Get all otu ids
 //     var bubble_otuIds = filteredSamples.map(x=>x.otu_ids)[0];
