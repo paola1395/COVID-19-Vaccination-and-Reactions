@@ -23,6 +23,9 @@ var svg = d3.select(".chart").append("svg")
 var chartGroup = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+// Initial Params
+// var chosenXAxis = "income";
+var chosenYAxis = "dataArray";
 // // create axes, function used to update x and y Axis upon click
 // function renderXAxes(newXScale, xAxis) {
 //     var bottomAxis = d3.axisBottom(newXScale);
@@ -142,6 +145,7 @@ d3.json("/us_vaccines").then(function (importedData) {
     // var sexDataArray = Object.values(sexData(doseSeries1));
     // var ageDataArray = Object.values(ageData(doseSeries1));
     var dataArray2 = Object.values(stateData(doseSeries2));
+    var dataArray3 = Object.values(stateData(otherSeries));
 
     console.log("dataArray", dataArray);
     console.log("dataArray2", dataArray2);
@@ -153,6 +157,7 @@ d3.json("/us_vaccines").then(function (importedData) {
     // var sexDataCategories = Object.keys(sexData(doseSeries1));
     // var ageDataCategories = Object.keys(ageData(doseSeries1));
     var dataCategories2 = Object.keys(stateData(doseSeries2));
+    var dataCategories3 = Object.keys(stateData(otherSeries));
 
     console.log("stateDataCategories", dataCategories);
     console.log("stateDataCategories2", dataCategories2);
@@ -219,7 +224,8 @@ d3.json("/us_vaccines").then(function (importedData) {
     // chartGroup.append("g")
     //     .call(yAxis);
     // set x to the bottom of the chart
-    var xAxis = chartGroup.append("g")
+    // var xAxis = 
+    chartGroup.append("g")
         .classed("x-axis", true)
         .attr("transform", `translate(0, ${chartHeight})`)
         .call(bottomAxis);
@@ -230,14 +236,16 @@ d3.json("/us_vaccines").then(function (importedData) {
 
     // Create the rectangles using data binding
     var barsGroup = chartGroup.selectAll("rect")
-        .data(dataArray)
+        .data(importedData)
         .enter()
         .append("rect")
         .attr("x", (d, i) => xScale(dataCategories[i]))
-        .attr("y", d => yScale(d))
+        .attr("y", d => yLinearScale(d))
         .attr("width", xScale.bandwidth())
-        .attr("height", d => chartHeight - yScale(d))
+        .attr("height", chartHeight)
         .attr("fill", "#008B8B");
+        // d => chartHeight - yScale(d)
+        // d => yLinearScale(d)
 
     // // Create axes labels
     // chartGroup.append("text")
@@ -248,10 +256,10 @@ d3.json("/us_vaccines").then(function (importedData) {
     //     .attr("class", "axisText")
     //     .text("Dose 1: # of Vaccination");
 
-    // chartGroup.append("text")
-    //     .attr("transform", `translate(${width / 2}, ${height + margin.top - 100})`)
-    //     .attr("class", "axisText")
-    //     .text("US States");
+    chartGroup.append("text")
+        .attr("transform", `translate(${width / 2}, ${height + margin.top - 100})`)
+        .attr("class", "axisText")
+        .text("US States");
     // // Create group for y-axis labels
     var yLabelsGroup = chartGroup.append("g")
     .attr("transform", "rotate(-90)", `translate(${width}, ${height})`)
@@ -259,32 +267,32 @@ d3.json("/us_vaccines").then(function (importedData) {
     var firstDoseLabel = yLabelsGroup.append("text")
     .attr("x", -180)
     .attr("y", -40)
-    .attr("value", doseSeries1) // value to grab for event listener
+    .attr("value", dataArray) // value to grab for event listener
     .classed("active", true)
     .text("Vaccination Count (Dose 1)");
 
     var secDoseLabel = yLabelsGroup.append("text")
     .attr("x", -180)
     .attr("y", -60)
-    .attr("value", doseSeries2) // value to grab for event listener
+    .attr("value", dataArray2) // value to grab for event listener
     .classed("inactive", true)
     .text("Vaccination Count (Dose 2)");
 
     var otherDoseLabel = yLabelsGroup.append("text")
     .attr("x", -180)
-    .attr("y", -60)
-    .attr("value", otherSeries) // value to grab for event listener
+    .attr("y", -80)
+    .attr("value", dataArray3) // value to grab for event listener
     .classed("inactive", true)
     .text("Vaccination Count (Uncategorized)");
-    
+
     yLabelsGroup.selectAll("text")
         .on("click", function () {
             // get value of selection
             var value = d3.select(this).attr("value");
-            if (value !== dataArray) {
+            if (value !== chosenYAxis) {
 
                 // replaces chosenXAxis with value
-                dataArray = value;
+                chosenYAxis = value;
 
                 // updates x scale for new data
                 yLinearScale = yScale(importedData, chosenYAxis);
