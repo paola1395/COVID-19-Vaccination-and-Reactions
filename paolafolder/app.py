@@ -1,3 +1,5 @@
+import json
+from flask import Flask, jsonify, redirect, render_template, json
 import sqlalchemy
 from sqlalchemy import create_engine, func, desc
 from sqlalchemy.orm import Session
@@ -10,10 +12,10 @@ import sqlite3
 from sqlalchemy.ext.automap import automap_base
 
 engine = create_engine('sqlite:///Data/VAERS.sqlite', echo=False)
-Base= automap_base()
+Base = automap_base()
 Base.prepare(engine, reflect=True)
 
-#Save references for each table
+# Save references for each table
 # World_Data = Base.classes.worldWideData
 # print (Base.classes.keys())
 US_Data = Base.classes["2021VAERS"]
@@ -21,12 +23,10 @@ US_Data = Base.classes["2021VAERS"]
 # Flask Setup
 ####################################
 # import os
-from flask import Flask, jsonify, redirect, render_template, json
-import json
 # import html
 # abort, url_for,
 
-app= Flask(__name__)
+app = Flask(__name__)
 # app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 ####################################
@@ -50,12 +50,14 @@ app= Flask(__name__)
 # read file
 with open('./static/data/doseOneSymptoms.json', 'r') as myfile:
     data = json.loads(myfile.read())
-#HOME/WELCOME PAGE
+# HOME/WELCOME PAGE
+
 
 @app.route("/")
 def index():
     return render_template('index.html')
     # jsonfile=json.dumps(data))
+
 
 @app.route("/jsonData")
 def jsonData():
@@ -69,7 +71,7 @@ def onedata():
     dose_one_info = cur.execute("select * from 'doseOneSymptoms';")
     results = dose_one_info.fetchall()
     conn.close()
-    
+
     return json.dumps(data)
 
 
@@ -83,6 +85,7 @@ def twodata():
 
     return jsonify(results)
 
+
 @app.route("/otherdosedata")
 def otherdata():
     conn = sqlite3.connect("Data/doseUnkSymptoms.db")
@@ -93,26 +96,31 @@ def otherdata():
 
     # import numpy as np
     # dose_unk_results = list(np.ravel(results))
-    
+
+
     return jsonify(results)
 
 # @app.route("/graph")
 # def bargraph():
 #     return render_template("index2.html")
 
+
 @app.route("/graph")
 def bargraph():
     return render_template("index2.html")
 
-#US DATA PAGE
+# US DATA PAGE
+
+
 @ app.route("/us_vaccines")
 def us_vaccines():
     session = Session(engine)
 
-    results = session.query(US_Data.VAERS_ID, US_Data.VAX_TYPE, US_Data.VAX_MANU, US_Data.VAX_DOSE_SERIES, US_Data.STATE, US_Data.AGE_YRS, US_Data.SEX, US_Data.VAX_DATE, US_Data.NUMDAYS, US_Data.SYMPTOM1, US_Data.SYMPTOM2, US_Data.SYMPTOM3, US_Data.SYMPTOM4, US_Data.SYMPTOM5).all()
+    results = session.query(US_Data.VAERS_ID, US_Data.VAX_TYPE, US_Data.VAX_MANU, US_Data.VAX_DOSE_SERIES, US_Data.STATE, US_Data.AGE_YRS, US_Data.SEX,
+                            US_Data.VAX_DATE, US_Data.NUMDAYS, US_Data.SYMPTOM1, US_Data.SYMPTOM2, US_Data.SYMPTOM3, US_Data.SYMPTOM4, US_Data.SYMPTOM5).all()
     session.close()
 
-    patients= []
+    patients = []
 
     for ID, VAX_TYPE, VAX_MANU, VAX_DOSE_SERIES, STATE, AGE_YRS, SEX, VAX_DATE, NUMDAYS, SYMPTOM1, SYMPTOM2, SYMPTOM3, SYMPTOM4, SYMPTOM5 in results:
         patients_dict = {}
@@ -133,6 +141,7 @@ def us_vaccines():
         patients.append(patients_dict)
 
     return jsonify(patients)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

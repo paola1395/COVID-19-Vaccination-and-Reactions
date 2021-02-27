@@ -18,8 +18,13 @@ US_Data = Base.classes["2021VAERS"]
 ####################################
 # Flask Setup
 ####################################
-from flask import Flask, jsonify, redirect, render_template
+from flask import Flask, jsonify, redirect, render_template, json
+import json
 app= Flask(__name__)
+
+# read json file
+with open('./static/data/doseOneSymptoms.json', 'r') as myfile:
+    data = json.loads(myfile.read())
 
 ####################################
 # Flask Routes
@@ -29,6 +34,10 @@ app= Flask(__name__)
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
+@app.route("/jsonData")
+def jsonData():
+    return jsonify(data)
 
 # Leaflet
 @app.route("/geomap")

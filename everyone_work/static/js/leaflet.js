@@ -77,7 +77,8 @@ d3.json(boundaryLink, function(b){
                             myMap.fitBounds(event.target.getBounds());
                         }
                     });
-                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
+                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Vaccinations:" + nfObject.format(element.properties.total_vaccinations) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
+                    // bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
                 }, 
             }).addTo(jan18);               
         })
@@ -123,7 +124,7 @@ d3.json(boundaryLink, function(b){
                             myMap.fitBounds(event.target.getBounds());
                         }
                     });
-                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
+                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Vaccinations:" + nfObject.format(element.properties.total_vaccinations) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
                 }, 
             }).addTo(jan25);               
         })
@@ -168,7 +169,7 @@ d3.json(boundaryLink, function(b){
                             myMap.fitBounds(event.target.getBounds());
                         }
                     });
-                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
+                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Vaccinations:" + nfObject.format(element.properties.total_vaccinations) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
                 }, 
             }).addTo(feb1);               
         })
@@ -213,7 +214,7 @@ d3.json(boundaryLink, function(b){
                             myMap.fitBounds(event.target.getBounds());
                         }
                     });
-                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
+                    layer.bindPopup(element.properties.location + "<hr> " + "People Fully Vaccinated: " + nfObject.format(element.properties.people_fully_vaccinated) + "<br> " + "Total Vaccinations:" + nfObject.format(element.properties.total_vaccinations) + "<br> " + "Total Cases: " + nfObject.format(element.properties.total_cases) + "<br> " + "Total Deaths: " + nfObject.format(element.properties.total_deaths));
                 }, 
             }).addTo(feb8);               
         })
