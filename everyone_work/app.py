@@ -23,8 +23,14 @@ import json
 app= Flask(__name__)
 
 # read json file
-with open('./static/data/doseOneSymptoms.json', 'r') as myfile:
-    data = json.loads(myfile.read())
+# JSON data files
+with open('./static/data/doseOneSymptoms.json', 'r') as data_one:
+    sympOne = json.loads(data_one.read())
+with open('./static/data/doseTwoSymptoms.json', 'r') as data_two:
+    sympTwo = json.loads(data_two.read())
+with open('./static/data/doseUnkSymptoms.json', 'r') as other_data:
+    otherSymp = json.loads(other_data.read())
+
 
 ####################################
 # Flask Routes
@@ -35,19 +41,28 @@ with open('./static/data/doseOneSymptoms.json', 'r') as myfile:
 def homepage():
     return render_template("index.html")
 
-@app.route("/jsonData")
-def jsonData():
-    return jsonify(data)
+@app.route("/doseone")
+def jsonOne():
+    return jsonify(sympOne)
+
+@app.route("/dosetwo")
+def jsonTwo():
+    return jsonify(sympTwo)
+
+@app.route("/otherdose")
+def jsonOther():
+    return jsonify(otherSymp)
+
 
 # Leaflet
 @app.route("/geomap")
 def geomap():
     return render_template("leaflet.html")
 
-# # Plotly
-# @app.route("/plotly")
-# def plotly():
-#     return render_template("plotly1.html")
+# Plotly
+@app.route("/plotly")
+def plotly():
+    return render_template("plotly.html")
 
 @app.route("/graph")
 def bargraph():
