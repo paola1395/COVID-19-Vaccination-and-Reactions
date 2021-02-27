@@ -1,9 +1,9 @@
-## Covid19 Global Vaccine + Adverse Reactions
+# Covid19 Global Vaccinations & Adverse Reactions
 
 ![COVID-Vaccine](Images/Images3.jpg)
 
-### Motivation:
-
+## Motivation:
+The novel coronavirus disease (COVID-19)—which emerged in Wuhan, China, in November 2019—has grown into a global threat and was eventually declared a global pandemic. It has seriously impacted the lives of many and caused numerous deaths, caused by the novel SARS-CoV-2 virus. CVR team further examined the effects and benefits of COVID-19 Vaccines globally.  
 
 ### Project Description/Outline:
 ## Definitions
@@ -20,14 +20,29 @@ Each country has their own national regulatory authorities (NRA) responsible for
 
 We will also classify a vaccine as approved if one of these two bodies greenlights a new vaccine on their ["emergency use listing"](https://www.who.int/news-room/q-a-detail/coronavirus-disease-use-of-emergency-use-listing-procedure-forvaccines-against-covid-19), or if the [WHO](https://www.who.int/teams/regulation-prequalification/eul/covid-19) does so. 
 
-| Vaccine Candidate  | Approved by  |  on |  notes |
-|------------------|------|-------------|--------------------|
-|  BioNTech-Pfizer |  FDA |  2020-12-12 | for emergency use  |
-|  BioNTech-Pfizer |  EMA |  subsequently | for emergency use  |
-|  Moderna |  FDA |  2020-12-19 | for emergency use  |
-|  Moderna |  EMA |  subsequently | for emergency use  |
-|  Oxford/AstraZeneca |  EMA |  2021-01-29 | for emergency use  |
+### Globally Authorized Vaccines
 
+
+|         Name              | Vaccine Type | Primary Developer | Country of Origin |
+|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| Comirnaty (BNT162b2)| mRNA-based vaccine | Pfizer, BioNTech; Fosun Pharma | Multinational |
+| Convidicea (Ad5-nCoV)| Recombinant vaccine (adenovirus type 5 vector) | CanSino Biologics | China |
+| COVID-19 Vaccine AstraZeneca (AZD1222); also known as Covishield| Adenovirus vaccine | BARDA, OWS | UK |
+| EpiVacCorona| Peptide vaccine | Federal Budgetary Research Institution State Research Center of Virology and Biotechnology| Russia |
+| JNJ-78436735 (formerly Ad26.COV2.S)| Non-replicating viral vector | Janssen Vaccines (Johnson & Johnson) | The Netherlands, US |
+| Moderna COVID‑19 Vaccine (mRNA-1273)| mRNA-based vaccine | Moderna, BARDA, NIAID | US |
+| Sputnik V | Recombinant adenovirus vaccine (rAd26 and rAd5) | Gamaleya Research Institute, Acellena Contract Drug Research and Development | Russia |
+
+### Limitations + Strengths (VASERS - Vaccine Adverse Event Reporting System)
+
+
+|         Strengths               | Limitations |
+|------------------------------------|------------------------------------|
+| National Data | Reporting bias |
+| Data available to public | Inconsistent data quality and completeness	|
+| Collects information about vaccine, characteristics of patient vaccinated, adverse event | No unvaccindated comparison group |
+| VAERS is a tool for identifying potential vaccine safety concerns that need further study using more robust data systems | Cannot calculate how often adverse events occur |
+| Rapid signal detection for rease adverse events | Generally cannnot assess if vaccine caused an adverse event	|
 
 
 ### Research Questions to Answer:
@@ -86,7 +101,8 @@ Track COVID-19 vaccination in the World, answer questions:
 6. PowerPoint slide to present at the end of the project.
 
 ### Data Analytics Team:
-* [Navi Sohi](https://github.com/PlainJane20): Project Idea, Data collection, Readme, Slides 
-* [Leonard Zhao](https://github.com/leonardz17): Leaflet and plotly
-* [Paola Lopez](https://github.com/paola1395): Python Flask
-* [Yuying Hong](https://github.com/yuyhong23): Data cleaning, one extra JS library→ animation
+* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `HTML5`/`CSS3`/`Bootstrap`
+* [Leonard Zhao](https://github.com/leonardz17): `Leaflet` and `plotly`
+* [Paola Lopez](https://github.com/paola1395): `Python` `Flask`
+* [Yuying Hong](https://github.com/yuyhong23): `Data cleaning`, one extra `JS library`→ animation
+
