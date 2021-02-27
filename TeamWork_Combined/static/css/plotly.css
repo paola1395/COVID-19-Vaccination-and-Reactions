@@ -1,4 +1,4 @@
-/* 
+
 .iframeContainer {
     padding: 20px;
     border: 1px solid #e3e3e3;
@@ -13,6 +13,11 @@
   body {
     /* Padding bottom by footer height */
     padding-bottom: 80px;
+  }
+
+  h2 {
+    color:#FF8C00;
+    text-align: center;
   }
   
   #footer {
