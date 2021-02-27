@@ -1,40 +1,9 @@
 // Use d3.json() to fetch data from JSON file
-// function unpack(rows, index) {
-//     return rows.map(function(row) {
-//       return row[index];
-//     });
-//   }
-
-// function getData() {
-//     d3.json("/dose1data").then(function(data) {
-//         var symptom = unpack(data.dataset.data, 1);
-//         var sympCount = unpack(data.dataset.data, 2);
-
-// }
-
-
-
-d3.json("/dose1data").then(function(data) {
-    var topSymptoms = data.slice(0, 5);
-
-    function sympData(series) {
-        var sympList = [];
-        series.map(obj => {
-            var symptom = obj.symptom
-            if (sympList[symptom]) {
-                sympList.push(symptom)
-            }
-            else {
-                !sympList.push(symptom)
-            }
-        })
-    return sympList;
-    };
-
-    // function sympData(series) {
+    // function symptoms(series) {
     //     var sympList = [];
     //     series.map(obj => {
-    //         var symptom = obj[0][1]
+    //         var i = 0
+    //         var symptom = obj[0][0]
     //         if (sympList[symptom]) {
     //             sympList.push(symptom)
     //         }
@@ -45,28 +14,112 @@ d3.json("/dose1data").then(function(data) {
     // return sympList;
     // };
 
-    // var topSymptom = Object.keys(sympData(topSymptoms));
-    console.log(Object.keys(data));
+function init() {
+    d3.json("/us_vaccines").then(function(importedData) {
+  
+        // parse the data
+        importedData.forEach(function(data) {
+            data.vax_dose_series = +data.vax_dose_series;
+          })
+        
+        var doseSeries1 = importedData.filter(obj => obj.vax_dose_series === 1);
+        var doseSeries2 = importedData.filter(obj => obj.vax_dose_series === 2);
+        var otherSeries = importedData.filter(obj => !obj.vax_dose_series);
+        
+       var allDoseSeries = [doseSeries1, doseSeries2, otherSeries];
+    //    console.log(allDoseSeries);
+
+        // Append options for dropdown menu
+        allDoseSeries.forEach(x => {
+            var dropDown = d3.select("#selDataset");
+            var selectOption = dropDown.append("option");
+            selectOption.attr("value", x).text(x);
+          })
+        
+        // Call optionChanged function
+        // Show first dose's plot
+        optionChanged(allDoseSeries[0]);
+    });
+}
+
+// Plot will change based on Dose Series
+function optionChanged(allDoseSeries){
+    buildCharts(allDoseSeries);
+}
+
+// Data to use for plot
+function buildCharts(allDoseSeries){
+    d3.json("/dose1data").then(function(data) {
+        // console.log(data);
+
+
+
+
+
+
+    // Set up filter based on Dose Series + symptoms
+    // // GET BACK TO THIS
+    // var filteredSeries = 
+
+
+
+
+
+// })
+
+
+
+// DOSE 1 DATA, SYMPTOM COUNT
+d3.json("/dose1data").then(function(data) {
+    // Parse data
+    data.forEach(function(data) {
+        data.count = +data.count;
+    })
+    
+    var topSymptomsOne = data.slice(0, 5);
+
+    symptomListOne = [topSymptomsOne[0][0], topSymptomsOne[1][0], topSymptomsOne[2][0], topSymptomsOne[3][0], topSymptomsOne[4][0]];
+    countArrayOne = [topSymptomsOne[0][1], topSymptomsOne[1][1], topSymptomsOne[2][1], topSymptomsOne[3][1], topSymptomsOne[4][1]];
+    // console.log(countArray);
+    
+    // var symptoms = Object.keys(symptomList(countArray));
+    // var symptomData = Object.values(symptomList(countArray));
+
+    // console.log(Object.keys(data));
+    // console.log(topSymptoms);
+
+    })
+});
+
+// DOSE 2 DATA, SYMPTOM COUNT
+d3.json("/dose2data").then(function(data) { 
+    // Parse data
+    data.forEach(function(data) {
+        data.count = +data.count;
+    })
+    
+    var topSymptomsTwo = data.slice(0, 5);
+
+    symptomListTwo = [topSymptomsTwo[0][0], topSymptomsTwo[1][0], topSymptomsTwo[2][0], topSymptomsTwo[3][0], topSymptomsTwo[4][0]];
+    countArrayTwo = [topSymptomsTwo[0][1], topSymptomsTwo[1][1], topSymptomsTwo[2][1], topSymptomsTwo[3][1], topSymptomsTwo[4][1]];
 
 });
 
-        
+// NULL DOSE DATA, SYMPTOM COUNT
+d3.json("/otherdosedata").then(function(data) {
+    // Parse data
+    data.forEach(function(data) {
+        data.count = +data.count;
+    })
     
-    
-    
-    
-    
-    
-    
+    var topSymptomsOther = data.slice(0, 5);
 
-    
-//         // Extract the sample_values from the filtered id samples data
-//     // Use slice to get the top 10 OTU values found in that individual
-//     // Because it's in the 0 index, need to indicate that
-//     var sampleValues = filteredSamples.map(x=>x.sample_values.slice(0,10))[0];
-//     // Use reverse so the graph descend from more to less
-//     var valueSorted = sampleValues.reverse();
-//     console.log(valueSorted);
+    symptomListOther = [topSymptomsOther[0][0], topSymptomsOther[1][0], topSymptomsOther[2][0], topSymptomsOther[3][0], topSymptomsOther[4][0]];
+    countArrayOther = [topSymptomsOther[0][1], topSymptomsOther[1][1], topSymptomsOther[2][1], topSymptomsOther[3][1], topSymptomsOther[4][1]];
+
+})
+
+
 
 
 
@@ -121,4 +174,4 @@ d3.json("/dose1data").then(function(data) {
    
 //    Plotly.newPlot("bubble", data2, layout);
 //   
-
+}

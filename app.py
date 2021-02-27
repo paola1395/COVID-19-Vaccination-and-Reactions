@@ -47,39 +47,35 @@ def onedata():
     return jsonify(results)
 
 
-# @app.route("/dose2data")
-# def twodata():
-#     conn = sqlite3.connect("Data/doseTwoSymptoms.db")
-#     cur = conn.cursor()
-#     dose_two_info = cur.execute("select * from 'doseTwoSymptoms';")
-#     results = dose_two_info.fetchall()
-#     conn.close()
+@app.route("/dose2data")
+def twodata():
+    conn = sqlite3.connect("Data/doseTwoSymptoms.db")
+    cur = conn.cursor()
+    dose_two_info = cur.execute("select * from 'doseTwoSymptoms';")
+    results = dose_two_info.fetchall()
+    conn.close()
 
-#     import numpy as np
-#     dose_two_results = list(np.ravel(results))
+    # import numpy as np
+    # dose_two_results = list(np.ravel(results))
     
-#     return jsonify(dose_two_results)
+    return jsonify(results)
 
-# @app.route("/otherdosedata")
-# def otherdata():
-#     conn = sqlite3.connect("Data/doseUnkSymptoms.db")
-#     cur = conn.cursor()
-#     dose_unk_info = cur.execute("select * from 'doseUnkSymptoms';")
-#     results = dose_unk_info.fetchall()
-#     conn.close()
+@app.route("/otherdosedata")
+def otherdata():
+    conn = sqlite3.connect("Data/doseUnkSymptoms.db")
+    cur = conn.cursor()
+    dose_unk_info = cur.execute("select * from 'doseUnkSymptoms';")
+    results = dose_unk_info.fetchall()
+    conn.close()
 
-#     import numpy as np
-#     dose_unk_results = list(np.ravel(results))
+    # import numpy as np
+    # dose_unk_results = list(np.ravel(results))
     
-#     return jsonify(dose_unk_results)
+    return jsonify(results)
 
 @app.route("/graph")
 def bargraph():
     return render_template("index2.html")
-
-# @app.route("/test")
-# def testgraph():
-#     return render_template("index2.html")
 
 #US DATA PAGE
 @ app.route("/us_vaccines")
