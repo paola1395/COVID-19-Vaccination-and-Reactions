@@ -39,10 +39,6 @@ def onedata():
     dose_one_info = cur.execute("select * from 'doseOneSymptoms';")
     results = dose_one_info.fetchall()
     conn.close()
-
-    # import numpy as np
-    # # Convert list of tuples into normal list
-    # dose_one_results = list(np.ravel(results))
     
     return jsonify(results)
 
@@ -55,9 +51,6 @@ def twodata():
     results = dose_two_info.fetchall()
     conn.close()
 
-    # import numpy as np
-    # dose_two_results = list(np.ravel(results))
-    
     return jsonify(results)
 
 @app.route("/otherdosedata")
