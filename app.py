@@ -9,7 +9,7 @@ import sqlite3
 ####################################
 from sqlalchemy.ext.automap import automap_base
 
-engine = create_engine('sqlite:///Data/VAERS.sqlite', echo=False)
+engine = create_engine('sqlite:///static/data/VAERS.sqlite', echo=False)
 Base= automap_base()
 Base.prepare(engine, reflect=True)
 
@@ -20,8 +20,18 @@ US_Data = Base.classes["2021VAERS"]
 ####################################
 # Flask Setup
 ####################################
-from flask import Flask, jsonify, redirect, render_template
+from flask import Flask, jsonify, redirect, render_template, json
+import json
+
 app= Flask(__name__)
+
+# JSON data files
+with open('./static/data/doseOneSymptoms.json', 'r') as data_one:
+    sympOne = json.loads(data_one.read())
+with open('./static/data/doseTwoSymptoms.json', 'r') as data_two:
+    sympTwo = json.loads(data_two.read())
+with open('./static/data/doseUnkSymptoms.json', 'r') as other_data:
+    otherSymp = json.loads(other_data.read())
 
 ####################################
 # Flask Routes
@@ -32,43 +42,17 @@ app= Flask(__name__)
 def homepage():
     return render_template("index.html")
 
-@app.route("/dose1data")
-def onedata():
-    conn = sqlite3.connect("Data/doseOneSymptoms.db")
-    cur = conn.cursor()
-    dose_one_info = cur.execute("select * from 'doseOneSymptoms';")
-    results = dose_one_info.fetchall()
-    conn.close()
-    
-    return jsonify(results)
+@app.route("/doseone")
+def jsonOne():
+    return jsonify(sympOne)
 
+@app.route("/dosetwo")
+def jsonTwo():
+    return jsonify(sympTwo)
 
-@app.route("/dose2data")
-def twodata():
-    conn = sqlite3.connect("Data/doseTwoSymptoms.db")
-    cur = conn.cursor()
-    dose_two_info = cur.execute("select * from 'doseTwoSymptoms';")
-    results = dose_two_info.fetchall()
-    conn.close()
-
-    return jsonify(results)
-
-@app.route("/otherdosedata")
-def otherdata():
-    conn = sqlite3.connect("Data/doseUnkSymptoms.db")
-    cur = conn.cursor()
-    dose_unk_info = cur.execute("select * from 'doseUnkSymptoms';")
-    results = dose_unk_info.fetchall()
-    conn.close()
-
-    # import numpy as np
-    # dose_unk_results = list(np.ravel(results))
-    
-    return jsonify(results)
-
-# @app.route("/graph")
-# def bargraph():
-#     return render_template("index2.html")
+@app.route("/otherdose")
+def jsonOther():
+    return jsonify(otherSymp)
 
 @app.route("/graph")
 def bargraph():

@@ -36,21 +36,21 @@
 //             selectOption.attr("value", x).text(x);
 //           })
         
-//         // Call optionChanged function
-//         // Show first dose's plot
+        // Call optionChanged function
+        // Show first dose's plot
 //         optionChanged(allDoseSeries[0]);
 //     });
 // }
 
-// // Plot will change based on Dose Series
+// Plot will change based on Dose Series
 // function optionChanged(allDoseSeries){
 //     buildCharts(allDoseSeries);
 // }
 
-// // Data to use for plot
+// Data to use for plot
 // function buildCharts(allDoseSeries){
 //     d3.json("/dose1data").then(function(data) {
-//         // console.log(data);
+        // console.log(data);
 
 
 
@@ -58,7 +58,7 @@
 
 
     // Set up filter based on Dose Series + symptoms
-    // // GET BACK TO THIS
+    // GET BACK TO THIS
     // var filteredSeries = 
 
 
@@ -70,12 +70,12 @@
 
 
 // DOSE 1 DATA, SYMPTOM COUNT
-d3.json("/dose1data").then(function(data) {
-    // Parse data
-    data.forEach(function(data) {
-        data.count = +data.count;
-    })
-    console.log(data);
+// d3.json("/dose1data").then(function(data) {
+//     // Parse data
+//     data.forEach(function(data) {
+//         data.count = +data.count;
+//     })
+//     console.log(data);
     
     // var topSymptomsOne = data.slice(0, 5);
 
@@ -89,7 +89,7 @@ d3.json("/dose1data").then(function(data) {
     // console.log(Object.keys(data));
     // console.log(topSymptoms);
 
-});
+// });
 
 // // DOSE 2 DATA, SYMPTOM COUNT
 // d3.json("/dose2data").then(function(data) { 

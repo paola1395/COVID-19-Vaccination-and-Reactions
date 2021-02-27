@@ -4,16 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>First Chart</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>Top U.S. Symptoms </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-  <div id="bar-plot"></div>
+  <div> class = "container"</div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Dose Series: </h5>
+          <select id="selDataset">
+            <option value="dose1">Dose Series 1</option>
+            <option value="dose2">Dose Series 2</option>
+            <option value="doseunk">Dose Series Unknown</option>
+          </select>
+        </div>
+  <div id="bubble"></div>
   <!-- D3.js CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
   <script type="text/javascript" src="../static/js/sympPlot.js"></script>
-  <!-- <script type="text/javascript" src="../static/js/USplot.js"></script> -->
-  <!-- <script src="{{url_for('static',filename='./js/USplot.js')}}"></script> -->
 </body>
 </html>
