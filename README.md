@@ -67,7 +67,7 @@ Track COVID-19 vaccination in the World, answer questions:
 4. Vaccine Article:	https://www.nature.com/articles/s41597-020-00688-8
 5. WHO Data Sets	https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines
 
-### Rough Breakdown of Tasks:
+### Breakdown of Tasks:
 1. Pulling data, cleaning the data and merging related datasets together
 2. Taking the most current data needed for the project
 3. Define at what level (ex: Countries, Continent, Manufactors, Patient received doses etc) we want to look 
