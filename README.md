@@ -61,8 +61,8 @@ Track COVID-19 vaccination in the World, answer questions:
     * After the beginning of the vaccine process all round the world, how does the infection trend move?
 
 ### Datasets used but not limited to:
-1. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet](https://vaers.hhs.gov/eSubDownload/verification)
-2. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet Symptoms](https://vaers.hhs.gov/eSubDownload/verification)
+1. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet](https://vaers.hhs.gov/data/datasets.html)
+2. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet Symptoms](https://vaers.hhs.gov/data/datasets.html)
 3. VAERS Data User Guide (Explains the data downloaded): [VAERS DataSet User Guide](https://vaers.hhs.gov/docs/VAERSDataUseGuide_November2020.pdf)
 4. Vaccine Article: [Scientific Data](https://www.nature.com/articles/s41597-020-00688-8)
 5. WHO Data Sets: [WHO DataSet](https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines)
