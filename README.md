@@ -62,7 +62,7 @@ Track COVID-19 vaccination in the World, answer questions:
 
 ### Datasets used but not limited to:
 1. Vaccine Adverse Event Reporting System (data DL):	https://vaers.hhs.gov/eSubDownload/verification
-2. Vaccine Adverse Event Reporting System (data DL):	VAERS - Data Sets (hhs.gov)
+2. Vaccine Adverse Event Reporting System (data DL):	https://vaers.hhs.gov/eSubDownload/verification
 3. VAERS Data User Guide (Explains the data downloaded):	DEPARTMENT OF HEALTH AND HUMAN SERVICES (hhs.gov)
 4. Vaccine Article:	https://www.nature.com/articles/s41597-020-00688-8
 5. WHO Data Sets	https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines
@@ -75,7 +75,7 @@ Track COVID-19 vaccination in the World, answer questions:
 5. Website to present the end product
 
 ### Data Analytics Team:
-* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `HTML5`/`CSS3`/`Bootstrap`
+* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design using` using -->`HTML5`/`CSS3`/`Bootstrap`
 * [Leonard Zhao](https://github.com/leonardz17): `Leaflet`, `Data to JSON + Boundaries JSON File`, `plotly` 
 * [Paola Lopez](https://github.com/paola1395): `Logo`, `Python Flask Initial Set Up`, `D3`, `plotly`
 * [Yuying Hong](https://github.com/yuyhong23): `Data cleaning + Convert dataset to sqlite db`,  `zdog library`, `Combine Everyone's Parts Together`
