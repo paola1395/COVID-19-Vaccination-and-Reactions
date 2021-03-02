@@ -61,18 +61,19 @@ Track COVID-19 vaccination in the World, answer questions:
     * After the beginning of the vaccine process all round the world, how does the infection trend move?
 
 ### Datasets used but not limited to:
-1. Vaccine Adverse Event Reporting System (data DL):	https://vaers.hhs.gov/eSubDownload/verification
-2. Vaccine Adverse Event Reporting System (data DL):	https://vaers.hhs.gov/eSubDownload/verification
-3. VAERS Data User Guide (Explains the data downloaded):	DEPARTMENT OF HEALTH AND HUMAN SERVICES (hhs.gov)
-4. Vaccine Article:	https://www.nature.com/articles/s41597-020-00688-8
-5. WHO Data Sets	https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines
+1. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet](https://vaers.hhs.gov/eSubDownload/verification)
+2. Vaccine Adverse Event Reporting System (data DL): [VAERS DataSet](https://vaers.hhs.gov/eSubDownload/verification)
+3. VAERS Data User Guide (Explains the data downloaded): [VAERS DataSet User Guide](https://vaers.hhs.gov/docs/VAERSDataUseGuide_November2020.pdf)
+4. Vaccine Article: [Scientific Data](https://www.nature.com/articles/s41597-020-00688-8)
+5. WHO Data Sets: [WHO DataSet](https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines)
+6. Our World Data Sets: [OWID DataSet](https://github.com/owid/covid-19-data/tree/master/public/data)
 
 ### Breakdown of Tasks:
 1. Pulling data, cleaning the data and merging related datasets together
 2. Taking the most current data needed for the project
 3. Define at what level (ex: Countries, Continent, Manufactors, Patient received doses etc) we want to look 
 4. Analyze, plot the data to answer our research questions as applicable
-5. Website to present the end product
+5. Website to present 
 
 ### Data Analytics Team:
 * [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design using` using -->`HTML5`/`CSS3`/`Bootstrap`. `sqdb conversion to sqlite using SQLite` `use of Canva for Logo creation`
