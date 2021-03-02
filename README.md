@@ -75,7 +75,7 @@ Track COVID-19 vaccination in the World, answer questions:
 5. Website to present the end product
 
 ### Data Analytics Team:
-* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design using` using -->`HTML5`/`CSS3`/`Bootstrap`. `sqdb conversion to sqlite`
+* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design using` using -->`HTML5`/`CSS3`/`Bootstrap`. `sqdb conversion to sqlite using SQLite`
 * [Leonard Zhao](https://github.com/leonardz17): `Leaflet`, `Data to JSON + Boundaries JSON File`, `plotly` 
 * [Paola Lopez](https://github.com/paola1395): `Logo`, `Python Flask Initial Set Up`, `D3`, `plotly`
 * [Yuying Hong](https://github.com/yuyhong23): `Data cleaning + Convert dataset to sqlite db`,  `zdog library`, `Combine Everyone's Parts Together`
