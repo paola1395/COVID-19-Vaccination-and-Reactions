@@ -123,41 +123,29 @@ d3.json("/us_vaccines").then(function (importedData) {
     var dataArray2 = Object.values(stateData(doseSeries2));
     var dataArray3 = Object.values(stateData(otherSeries));
 
-
-    var dataCategories = Object.keys([stateData(doseSeries1),
-    stateData(doseSeries2),
-    stateData(otherSeries),
-    sexData(doseSeries1),
-    sexData(doseSeries2),
-    sexData(otherSeries),
-    ageData(doseSeries1),
-    ageData(doseSeries2),
-    ageData(otherSeries)
-    ]);
     console.log(stateDefault);
+
+    // var dataCategories = Object.keys([stateData(doseSeries1),
+    
+    // sexData(doseSeries1),
+    // sexData(doseSeries2),
+    // sexData(otherSeries),
+    // ageData(doseSeries1),
+    // ageData(doseSeries2),
+    // ageData(otherSeries)
+    // ]);
 
     // var dataCategories2 = Object.keys();
     // var dataCategories3 = Object.keys);
 
     // DATA Y ARRAY VALUES/ X CATEGORIES FOR: SEX PER DOSE SERIES
-    // var sexDataArray = Object.values(sexData(doseSeries1));
+    var sexDataArray = Object.values(sexData(doseSeries1));
     // var sexDataCategories = );
 
     // DATA Y ARRAY VALUES/ X CATEGORIES FOR: AGE PER DOSE SERIES
-    // var ageDataArray = Object.values(ageData(doseSeries1));
+    var ageDataArray = Object.values(ageData(doseSeries1));
     // var ageDataCategories = Object.keys();
 
-    // // function used for updating x-scale var upon click on axis label
-    // function xScale(importedData, dataCategories) {
-    //     // create x scales
-    //     var xLinearScale = d3.scaleBand()
-    //         .domain([d3.min(importedData, d => d[dataCategories])* 0.9,
-    //         d3.max(importedData, d => d[dataCategories]*1.05)
-    //     ])
-    //     .range([0, chartWidth])
-    //     .padding([0.2]);
-    // return xLinearScale;
-    // }
     states = importedData.map(d=>d.state);
     states_2 = {}
     states.forEach(d=>{
@@ -175,13 +163,19 @@ d3.json("/us_vaccines").then(function (importedData) {
     
         }
     })
-    console.log(states_2);
+    all_states = Object.keys(states_2);
+    all_values = Object.values(states_2);
+    console.log(states_2, all_states, all_values);
 
     // scale x to chart width
     var xScale = d3.scaleBand()
-        .domain(states.values)
+        .domain(all_states)
         .range([0, chartWidth])
         .padding(0.1);
+    // scale y to chart height
+    // var yScale = d3.scaleLinear()
+    //     .domain([d3.max(all_values), d3.max(all_values)])
+    //     .range([chartHeight, 0]);
 
     // Create y scale function
     var yLinearScale = yScale(importedData, chosenYAxis);
@@ -197,10 +191,6 @@ d3.json("/us_vaccines").then(function (importedData) {
     //     return yLinearScale;
     // }
 
-    // // scale y to chart height
-    // var yScale = d3.scaleLinear()
-    //     .domain([0, d3.max(dataArray)])
-    //     .range([chartHeight, 0]);
     // // scale x to chart width
 
     // create axes
@@ -222,17 +212,25 @@ d3.json("/us_vaccines").then(function (importedData) {
     var yAxis = chartGroup.append("g")
         .call(leftAxis);
     console.log(importedData);
+    d_data = [];
+    all_values.forEach((d,i)=>{
+        d_data.push({
+            "state": all_states[i],
+            "count": d
+        })
+console.log(d, i)
+    })
 
     // Create the rectangles using data binding
     var barsGroup = chartGroup.selectAll("rect")
-        .data(importedData)
+        .data(d_data)
         .enter()
         .append("rect")
         // .attr("x", (d, i) => xScale(dataCategories[i]))
         .attr("x", (d, i) => xScale(d.state))
-        .attr("y", d => yLinearScale(d.vax_dose_series))
+        .attr("y", d => yLinearScale(d.count) - chartHeight)
         .attr("width", xScale.bandwidth())
-        .attr("height", chartHeight)
+        .attr("height", d=>d.count)
         .attr("fill", "#008B8B");
     // d => chartHeight - yScale(d)
     // d => yLinearScale(d)
@@ -245,21 +243,21 @@ d3.json("/us_vaccines").then(function (importedData) {
     var stateLabel = xLabelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 60)
-        .attr("value", "state") // value to grab for event listener
+        .attr("value", dataArray ) // value to grab for event listener
         .classed("active", true)
         .text("State");
 
     var sexLabel = xLabelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 40)
-        .attr("value", "sex") // value to grab for event listener
+        .attr("value", sexDataArray) // value to grab for event listener
         .classed("inactive", true)
         .text("Sex");
 
     var ageLabel = xLabelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 20)
-        .attr("value", "age") // value to grab for event listener
+        .attr("value", ageDataArray) // value to grab for event listener
         .classed("inactive", true)
         .text("Age");
 
