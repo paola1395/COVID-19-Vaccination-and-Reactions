@@ -1,13 +1,24 @@
+// // svg container
+// var height = 600;
+// var width = 1000;
+
+// // margins
+// var margin = {
+//   top: 50,
+//   right: 50,
+//   bottom: 50,
+//   left: 50
+// };
 // svg container
 var height = 600;
 var width = 1000;
 
 // margins
 var margin = {
-  top: 50,
-  right: 50,
-  bottom: 50,
-  left: 50
+    top: 20,
+    right: 40,
+    bottom: 100,
+    left: 100
 };
 
 // chart area minus margins
@@ -99,6 +110,26 @@ var barsGroup = chartGroup.selectAll("rect")
     .attr("width", xScale.bandwidth())
     .attr("height", d => chartHeight - yScale(d))
     .attr("fill", "green");
+
+ // Create the rectangles using data binding
+ var barsGroup = chartGroup.selectAll("rect")
+ .data(importedData)
+ .enter()
+ .append("rect")
+ .attr("x", (d, i) => xScale(dataCategories[i]))
+ .attr("y", d => yLinearScale(d))
+ .attr("width", xScale.bandwidth())
+ .attr("height", chartHeight)
+ .attr("fill", "#008B8B");
+
+// Create axes labels
+chartGroup.append("text")
+   .attr("transform", "rotate(-90)")
+   .attr("y", 0 - margin.left + 40)
+   .attr("x", 0 - (height / 2))
+   .attr("dy", "1em")
+   .attr("class", "axisText")
+   .text("Dose 1: # of Vaccination");
 
 // Create the event listeners with transitions
 barsGroup.on("mouseover", function() {
