@@ -77,9 +77,9 @@ Track COVID-19 vaccination in the World, answer questions:
 5. Website to present 
 
 ### Data Analytics Team:
-* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design` using -->`HTML5`/`CSS3`/`PHP`/`Bootstrap`,`sqdb conversion to sqlite using SQLite` `use of Canva for Logo creation`
+* [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design` using -->`HTML5`/`CSS3`/`PHP`/`Bootstrap`,`sqdb conversion to sqlite using SQLite`
 * [Leonard Zhao](https://github.com/leonardz17): `Leaflet`, `Data to JSON + Boundaries JSON File`, `plotly` 
-* [Paola Lopez](https://github.com/paola1395): `Logo`, `Python Flask Initial Set Up`, `D3`, `plotly`
+* [Paola Lopez](https://github.com/paola1395): `Python Flask`, `D3`, `plotly`, `use of Canva for Logo creation`
 * [Yuying Hong](https://github.com/yuyhong23): `Data cleaning + Convert dataset to sqlite db`,  `zdog library`, `Combine Everyone's Parts Together`
 * Team: `Data Organization & Understanding`, `Research Questions`, `Visualization/Graphs Planning`, `Debug/Supports`
 
