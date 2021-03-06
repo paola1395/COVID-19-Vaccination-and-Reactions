@@ -1,0 +1,2098 @@
+[
+    {
+        "count": 55,
+        "symptom": "Pyrexia"
+    },
+    {
+        "count": 51,
+        "symptom": "Headache"
+    },
+    {
+        "count": 47,
+        "symptom": "Chills"
+    },
+    {
+        "count": 46,
+        "symptom": "Pain"
+    },
+    {
+        "count": 42,
+        "symptom": "Dyspnoea"
+    },
+    {
+        "count": 37,
+        "symptom": "Fatigue"
+    },
+    {
+        "count": 37,
+        "symptom": "Nausea"
+    },
+    {
+        "count": 28,
+        "symptom": "Dizziness"
+    },
+    {
+        "count": 27,
+        "symptom": "Chest pain"
+    },
+    {
+        "count": 26,
+        "symptom": "Vomiting"
+    },
+    {
+        "count": 22,
+        "symptom": "Death"
+    },
+    {
+        "count": 22,
+        "symptom": "Myalgia"
+    },
+    {
+        "count": 21,
+        "symptom": "Tachycardia"
+    },
+    {
+        "count": 20,
+        "symptom": "Arthralgia"
+    },
+    {
+        "count": 18,
+        "symptom": "Syncope"
+    },
+    {
+        "count": 18,
+        "symptom": "Pain in extremity"
+    },
+    {
+        "count": 17,
+        "symptom": "Asthenia"
+    },
+    {
+        "count": 15,
+        "symptom": "Hyperhidrosis"
+    },
+    {
+        "count": 15,
+        "symptom": "Injection site pain"
+    },
+    {
+        "count": 15,
+        "symptom": "Rash"
+    },
+    {
+        "count": 14,
+        "symptom": "Paraesthesia"
+    },
+    {
+        "count": 13,
+        "symptom": "Condition aggravated"
+    },
+    {
+        "count": 13,
+        "symptom": "Malaise"
+    },
+    {
+        "count": 13,
+        "symptom": "Abdominal pain"
+    },
+    {
+        "count": 13,
+        "symptom": "Palpitations"
+    },
+    {
+        "count": 12,
+        "symptom": "Body temperature increased"
+    },
+    {
+        "count": 12,
+        "symptom": "Chest discomfort"
+    },
+    {
+        "count": 12,
+        "symptom": "Feeling abnormal"
+    },
+    {
+        "count": 12,
+        "symptom": "Laboratory test"
+    },
+    {
+        "count": 11,
+        "symptom": "Heart rate increased"
+    },
+    {
+        "count": 11,
+        "symptom": "Troponin increased"
+    },
+    {
+        "count": 11,
+        "symptom": "Electrocardiogram"
+    },
+    {
+        "count": 11,
+        "symptom": "Cough"
+    },
+    {
+        "count": 11,
+        "symptom": "Lymphadenopathy"
+    },
+    {
+        "count": 10,
+        "symptom": "Echocardiogram normal"
+    },
+    {
+        "count": 10,
+        "symptom": "Hypoaesthesia"
+    },
+    {
+        "count": 10,
+        "symptom": "Speech disorder"
+    },
+    {
+        "count": 10,
+        "symptom": "Loss of consciousness"
+    },
+    {
+        "count": 10,
+        "symptom": "Back pain"
+    },
+    {
+        "count": 10,
+        "symptom": "Urticaria"
+    },
+    {
+        "count": 9,
+        "symptom": "Flushing"
+    },
+    {
+        "count": 9,
+        "symptom": "Unresponsive to stimuli"
+    },
+    {
+        "count": 9,
+        "symptom": "Tremor"
+    },
+    {
+        "count": 9,
+        "symptom": "Chest X-ray normal"
+    },
+    {
+        "count": 9,
+        "symptom": "Anaphylactic reaction"
+    },
+    {
+        "count": 9,
+        "symptom": "Paraesthesia oral"
+    },
+    {
+        "count": 8,
+        "symptom": "Appendicitis"
+    },
+    {
+        "count": 8,
+        "symptom": "Blood test"
+    },
+    {
+        "count": 8,
+        "symptom": "Full blood count"
+    },
+    {
+        "count": 8,
+        "symptom": "Decreased appetite"
+    },
+    {
+        "count": 8,
+        "symptom": "Throat tightness"
+    },
+    {
+        "count": 8,
+        "symptom": "Erythema"
+    },
+    {
+        "count": 7,
+        "symptom": "Dysphagia"
+    },
+    {
+        "count": 7,
+        "symptom": "Hypersensitivity"
+    },
+    {
+        "count": 7,
+        "symptom": "Metabolic function test"
+    },
+    {
+        "count": 7,
+        "symptom": "Blood pressure increased"
+    },
+    {
+        "count": 7,
+        "symptom": "Pruritus"
+    },
+    {
+        "count": 7,
+        "symptom": "Feeling hot"
+    },
+    {
+        "count": 7,
+        "symptom": "White blood cell count increased"
+    },
+    {
+        "count": 7,
+        "symptom": "Appendicectomy"
+    },
+    {
+        "count": 7,
+        "symptom": "Computerised tomogram"
+    },
+    {
+        "count": 7,
+        "symptom": "Cold sweat"
+    },
+    {
+        "count": 6,
+        "symptom": "Blood potassium decreased"
+    },
+    {
+        "count": 6,
+        "symptom": "Peripheral swelling"
+    },
+    {
+        "count": 6,
+        "symptom": "Diarrhoea"
+    },
+    {
+        "count": 6,
+        "symptom": "Facial paralysis"
+    },
+    {
+        "count": 6,
+        "symptom": "Hypertension"
+    },
+    {
+        "count": 6,
+        "symptom": "Vertigo"
+    },
+    {
+        "count": 6,
+        "symptom": "Computerised tomogram head normal"
+    },
+    {
+        "count": 6,
+        "symptom": "Electrocardiogram normal"
+    },
+    {
+        "count": 6,
+        "symptom": "Cardiac arrest"
+    },
+    {
+        "count": 5,
+        "symptom": "Pallor"
+    },
+    {
+        "count": 5,
+        "symptom": "Hypoxia"
+    },
+    {
+        "count": 5,
+        "symptom": "Pulmonary embolism"
+    },
+    {
+        "count": 5,
+        "symptom": "Electrocardiogram abnormal"
+    },
+    {
+        "count": 5,
+        "symptom": "Intensive care"
+    },
+    {
+        "count": 5,
+        "symptom": "Pharyngeal swelling"
+    },
+    {
+        "count": 5,
+        "symptom": "Blood glucose normal"
+    },
+    {
+        "count": 5,
+        "symptom": "Gait disturbance"
+    },
+    {
+        "count": 5,
+        "symptom": "Laboratory test normal"
+    },
+    {
+        "count": 5,
+        "symptom": "Sleep disorder"
+    },
+    {
+        "count": 5,
+        "symptom": "Chest X-ray"
+    },
+    {
+        "count": 5,
+        "symptom": "Tinnitus"
+    },
+    {
+        "count": 5,
+        "symptom": "Oxygen saturation decreased"
+    },
+    {
+        "count": 5,
+        "symptom": "Migraine"
+    },
+    {
+        "count": 5,
+        "symptom": "C-reactive protein increased"
+    },
+    {
+        "count": 5,
+        "symptom": "Appendicitis perforated"
+    },
+    {
+        "count": 5,
+        "symptom": "Somnolence"
+    },
+    {
+        "count": 5,
+        "symptom": "Burning sensation"
+    },
+    {
+        "count": 5,
+        "symptom": "Muscular weakness"
+    },
+    {
+        "count": 4,
+        "symptom": "Influenza like illness"
+    },
+    {
+        "count": 4,
+        "symptom": "Full blood count normal"
+    },
+    {
+        "count": 4,
+        "symptom": "Fall"
+    },
+    {
+        "count": 4,
+        "symptom": "Impaired work ability"
+    },
+    {
+        "count": 4,
+        "symptom": "Myocarditis"
+    },
+    {
+        "count": 4,
+        "symptom": "Feeling cold"
+    },
+    {
+        "count": 4,
+        "symptom": "Lip swelling"
+    },
+    {
+        "count": 4,
+        "symptom": "Injection site swelling"
+    },
+    {
+        "count": 4,
+        "symptom": "Fibrin D dimer increased"
+    },
+    {
+        "count": 4,
+        "symptom": "Platelet count decreased"
+    },
+    {
+        "count": 4,
+        "symptom": "Oropharyngeal pain"
+    },
+    {
+        "count": 4,
+        "symptom": "Magnetic resonance imaging abnormal"
+    },
+    {
+        "count": 4,
+        "symptom": "Computerised tomogram abdomen"
+    },
+    {
+        "count": 4,
+        "symptom": "Hypoaesthesia oral"
+    },
+    {
+        "count": 4,
+        "symptom": "Anxiety"
+    },
+    {
+        "count": 4,
+        "symptom": "Acute myocardial infarction"
+    },
+    {
+        "count": 4,
+        "symptom": "Seizure"
+    },
+    {
+        "count": 4,
+        "symptom": "Resuscitation"
+    },
+    {
+        "count": 4,
+        "symptom": "Restlessness"
+    },
+    {
+        "count": 4,
+        "symptom": "Swollen tongue"
+    },
+    {
+        "count": 4,
+        "symptom": "Echocardiogram"
+    },
+    {
+        "count": 4,
+        "symptom": "Tachypnoea"
+    },
+    {
+        "count": 4,
+        "symptom": "Throat irritation"
+    },
+    {
+        "count": 4,
+        "symptom": "Abdominal discomfort"
+    },
+    {
+        "count": 4,
+        "symptom": "Rash erythematous"
+    },
+    {
+        "count": 4,
+        "symptom": "Wheezing"
+    },
+    {
+        "count": 3,
+        "symptom": "Abdominal pain lower"
+    },
+    {
+        "count": 3,
+        "symptom": "White blood cell count normal"
+    },
+    {
+        "count": 3,
+        "symptom": "Blood thyroid stimulating hormone normal"
+    },
+    {
+        "count": 3,
+        "symptom": "Hypotension"
+    },
+    {
+        "count": 3,
+        "symptom": "Skin warm"
+    },
+    {
+        "count": 3,
+        "symptom": "Electrocardiogram ST segment elevation"
+    },
+    {
+        "count": 3,
+        "symptom": "Muscle spasms"
+    },
+    {
+        "count": 3,
+        "symptom": "Swelling"
+    },
+    {
+        "count": 3,
+        "symptom": "Discomfort"
+    },
+    {
+        "count": 3,
+        "symptom": "Glomerular filtration rate"
+    },
+    {
+        "count": 3,
+        "symptom": "Swelling face"
+    },
+    {
+        "count": 3,
+        "symptom": "Mobility decreased"
+    },
+    {
+        "count": 3,
+        "symptom": "Immediate post-injection reaction"
+    },
+    {
+        "count": 3,
+        "symptom": "Metabolic function test normal"
+    },
+    {
+        "count": 3,
+        "symptom": "Hemiparesis"
+    },
+    {
+        "count": 3,
+        "symptom": "Dehydration"
+    },
+    {
+        "count": 3,
+        "symptom": "Deep vein thrombosis"
+    },
+    {
+        "count": 3,
+        "symptom": "Endotracheal intubation"
+    },
+    {
+        "count": 3,
+        "symptom": "SARS-CoV-2 test positive"
+    },
+    {
+        "count": 3,
+        "symptom": "Cardio-respiratory arrest"
+    },
+    {
+        "count": 3,
+        "symptom": "Magnetic resonance imaging brain normal"
+    },
+    {
+        "count": 3,
+        "symptom": "Cardiovascular evaluation"
+    },
+    {
+        "count": 3,
+        "symptom": "Magnetic resonance imaging"
+    },
+    {
+        "count": 3,
+        "symptom": "Angiogram"
+    },
+    {
+        "count": 3,
+        "symptom": "Angioedema"
+    },
+    {
+        "count": 3,
+        "symptom": "Loss of personal independence in daily activities"
+    },
+    {
+        "count": 3,
+        "symptom": "Heart rate irregular"
+    },
+    {
+        "count": 3,
+        "symptom": "Confusional state"
+    },
+    {
+        "count": 3,
+        "symptom": "Computerised tomogram abdomen abnormal"
+    },
+    {
+        "count": 3,
+        "symptom": "Scan with contrast abnormal"
+    },
+    {
+        "count": 3,
+        "symptom": "Blood glucose increased"
+    },
+    {
+        "count": 3,
+        "symptom": "Dysgeusia"
+    },
+    {
+        "count": 3,
+        "symptom": "Atrial fibrillation"
+    },
+    {
+        "count": 3,
+        "symptom": "Blood culture negative"
+    },
+    {
+        "count": 3,
+        "symptom": "Respiratory distress"
+    },
+    {
+        "count": 3,
+        "symptom": "Respiratory viral panel"
+    },
+    {
+        "count": 3,
+        "symptom": "Petechiae"
+    },
+    {
+        "count": 3,
+        "symptom": "Axillary pain"
+    },
+    {
+        "count": 3,
+        "symptom": "Red blood cell sedimentation rate increased"
+    },
+    {
+        "count": 3,
+        "symptom": "Retching"
+    },
+    {
+        "count": 3,
+        "symptom": "Balance disorder"
+    },
+    {
+        "count": 3,
+        "symptom": "Respiratory arrest"
+    },
+    {
+        "count": 3,
+        "symptom": "Rhinorrhoea"
+    },
+    {
+        "count": 3,
+        "symptom": "Blood alkaline phosphatase increased"
+    },
+    {
+        "count": 3,
+        "symptom": "Dysphonia"
+    },
+    {
+        "count": 3,
+        "symptom": "Pulse absent"
+    },
+    {
+        "count": 2,
+        "symptom": "Impaired driving ability"
+    },
+    {
+        "count": 2,
+        "symptom": "Angina pectoris"
+    },
+    {
+        "count": 2,
+        "symptom": "Procalcitonin increased"
+    },
+    {
+        "count": 2,
+        "symptom": "Electrocardiogram PR segment depression"
+    },
+    {
+        "count": 2,
+        "symptom": "Urinary incontinence"
+    },
+    {
+        "count": 2,
+        "symptom": "Heart rate decreased"
+    },
+    {
+        "count": 2,
+        "symptom": "Unevaluable event"
+    },
+    {
+        "count": 2,
+        "symptom": "Ultrasound scan normal"
+    },
+    {
+        "count": 2,
+        "symptom": "Alanine aminotransferase increased"
+    },
+    {
+        "count": 2,
+        "symptom": "Troponin I increased"
+    },
+    {
+        "count": 2,
+        "symptom": "Chest X-ray abnormal"
+    },
+    {
+        "count": 2,
+        "symptom": "Troponin"
+    },
+    {
+        "count": 2,
+        "symptom": "Crepitations"
+    },
+    {
+        "count": 2,
+        "symptom": "Presyncope"
+    },
+    {
+        "count": 2,
+        "symptom": "Cerebrovascular accident"
+    },
+    {
+        "count": 2,
+        "symptom": "Cardioversion"
+    },
+    {
+        "count": 2,
+        "symptom": "Lymph node pain"
+    },
+    {
+        "count": 2,
+        "symptom": "Eye swelling"
+    },
+    {
+        "count": 2,
+        "symptom": "Extrasystoles"
+    },
+    {
+        "count": 2,
+        "symptom": "Urine analysis"
+    },
+    {
+        "count": 2,
+        "symptom": "Laparoscopic surgery"
+    },
+    {
+        "count": 2,
+        "symptom": "Immunoglobulin therapy"
+    },
+    {
+        "count": 2,
+        "symptom": "Ventricular extrasystoles"
+    },
+    {
+        "count": 2,
+        "symptom": "Visual impairment"
+    },
+    {
+        "count": 2,
+        "symptom": "Immune thrombocytopenia"
+    },
+    {
+        "count": 2,
+        "symptom": "Vision blurred"
+    },
+    {
+        "count": 2,
+        "symptom": "Viral infection"
+    },
+    {
+        "count": 2,
+        "symptom": "Rash pruritic"
+    },
+    {
+        "count": 2,
+        "symptom": "Abdominal pain upper"
+    },
+    {
+        "count": 2,
+        "symptom": "Injected limb mobility decreased"
+    },
+    {
+        "count": 2,
+        "symptom": "Culture negative"
+    },
+    {
+        "count": 2,
+        "symptom": "Injection site pruritus"
+    },
+    {
+        "count": 2,
+        "symptom": "Urine analysis normal"
+    },
+    {
+        "count": 2,
+        "symptom": "Productive cough"
+    },
+    {
+        "count": 2,
+        "symptom": "Electrocardiogram change"
+    },
+    {
+        "count": 2,
+        "symptom": "Computerised tomogram head"
+    },
+    {
+        "count": 2,
+        "symptom": "Vaccination complication"
+    },
+    {
+        "count": 2,
+        "symptom": "Magnetic resonance imaging brain"
+    },
+    {
+        "count": 2,
+        "symptom": "Computerised tomogram abnormal"
+    },
+    {
+        "count": 2,
+        "symptom": "Product administered at inappropriate site"
+    },
+    {
+        "count": 2,
+        "symptom": "Joint range of motion decreased"
+    },
+    {
+        "count": 2,
+        "symptom": "Asthma"
+    },
+    {
+        "count": 2,
+        "symptom": "Thrombocytopenia"
+    },
+    {
+        "count": 2,
+        "symptom": "Feeling of body temperature change"
+    },
+    {
+        "count": 2,
+        "symptom": "Differential white blood cell count"
+    },
+    {
+        "count": 2,
+        "symptom": "Muscle tightness"
+    },
+    {
+        "count": 2,
+        "symptom": "Gait inability"
+    },
+    {
+        "count": 2,
+        "symptom": "Bone pain"
+    },
+    {
+        "count": 2,
+        "symptom": "Blood lactic acid increased"
+    },
+    {
+        "count": 2,
+        "symptom": "Myocardial infarction"
+    },
+    {
+        "count": 2,
+        "symptom": "Sudden death"
+    },
+    {
+        "count": 2,
+        "symptom": "Stress cardiomyopathy"
+    },
+    {
+        "count": 2,
+        "symptom": "Nasal injury"
+    },
+    {
+        "count": 2,
+        "symptom": "Blood magnesium normal"
+    },
+    {
+        "count": 2,
+        "symptom": "Neck pain"
+    },
+    {
+        "count": 2,
+        "symptom": "Sinus tachycardia"
+    },
+    {
+        "count": 2,
+        "symptom": "Sepsis"
+    },
+    {
+        "count": 2,
+        "symptom": "Dizziness postural"
+    },
+    {
+        "count": 2,
+        "symptom": "Neuropathy peripheral"
+    },
+    {
+        "count": 2,
+        "symptom": "Exposure during pregnancy"
+    },
+    {
+        "count": 2,
+        "symptom": "Dry mouth"
+    },
+    {
+        "count": 2,
+        "symptom": "Scar"
+    },
+    {
+        "count": 2,
+        "symptom": "Dry throat"
+    },
+    {
+        "count": 2,
+        "symptom": "Exposure to SARS-CoV-2"
+    },
+    {
+        "count": 2,
+        "symptom": "Aspartate aminotransferase increased"
+    },
+    {
+        "count": 2,
+        "symptom": "Painful respiration"
+    },
+    {
+        "count": 2,
+        "symptom": "Blood lactic acid"
+    },
+    {
+        "count": 2,
+        "symptom": "Breast pain"
+    },
+    {
+        "count": 2,
+        "symptom": "Fibrin D dimer normal"
+    },
+    {
+        "count": 2,
+        "symptom": "Tenderness"
+    },
+    {
+        "count": 2,
+        "symptom": "Haemorrhage"
+    },
+    {
+        "count": 2,
+        "symptom": "Blood culture"
+    },
+    {
+        "count": 2,
+        "symptom": "Angiogram pulmonary abnormal"
+    },
+    {
+        "count": 2,
+        "symptom": "Cardiac monitoring abnormal"
+    },
+    {
+        "count": 2,
+        "symptom": "Haemoglobin decreased"
+    },
+    {
+        "count": 2,
+        "symptom": "Ejection fraction decreased"
+    },
+    {
+        "count": 2,
+        "symptom": "Platelet count normal"
+    },
+    {
+        "count": 2,
+        "symptom": "Guillain-Barre syndrome"
+    },
+    {
+        "count": 2,
+        "symptom": "Pharyngeal hypoaesthesia"
+    },
+    {
+        "count": 2,
+        "symptom": "Bilevel positive airway pressure"
+    },
+    {
+        "count": 2,
+        "symptom": "Facial asymmetry"
+    },
+    {
+        "count": 2,
+        "symptom": "Platelet count"
+    },
+    {
+        "count": 2,
+        "symptom": "Photophobia"
+    },
+    {
+        "count": 2,
+        "symptom": "Respiratory tract congestion"
+    },
+    {
+        "count": 1,
+        "symptom": "Echocardiogram abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electrocardiogram PR segment elevation"
+    },
+    {
+        "count": 1,
+        "symptom": "Disorientation"
+    },
+    {
+        "count": 1,
+        "symptom": "Dyskinesia"
+    },
+    {
+        "count": 1,
+        "symptom": "Dysarthria"
+    },
+    {
+        "count": 1,
+        "symptom": "Deafness"
+    },
+    {
+        "count": 1,
+        "symptom": "Cyanosis"
+    },
+    {
+        "count": 1,
+        "symptom": "Dyspnoea exertional"
+    },
+    {
+        "count": 1,
+        "symptom": "Culture urine negative"
+    },
+    {
+        "count": 1,
+        "symptom": "Culture urine"
+    },
+    {
+        "count": 1,
+        "symptom": "Defaecation urgency"
+    },
+    {
+        "count": 1,
+        "symptom": "Critical illness"
+    },
+    {
+        "count": 1,
+        "symptom": "Ejection fraction normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electrocardiogram ST segment abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Dysstasia"
+    },
+    {
+        "count": 1,
+        "symptom": "Crying"
+    },
+    {
+        "count": 1,
+        "symptom": "Diabetic ketoacidosis"
+    },
+    {
+        "count": 1,
+        "symptom": "Dyspepsia"
+    },
+    {
+        "count": 1,
+        "symptom": "X-ray limb"
+    },
+    {
+        "count": 1,
+        "symptom": "Coronary artery bypass"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood bilirubin normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Autopsy"
+    },
+    {
+        "count": 1,
+        "symptom": "Bacteraemia"
+    },
+    {
+        "count": 1,
+        "symptom": "Basilar artery occlusion"
+    },
+    {
+        "count": 1,
+        "symptom": "Bilirubin conjugated normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Bladder catheterisation"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood albumin normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood bicarbonate decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood calcium normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood potassium normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood chloride normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood creatine phosphokinase increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood creatine phosphokinase normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood creatinine increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood creatinine normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood electrolytes normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood glucose"
+    },
+    {
+        "count": 1,
+        "symptom": "Autonomic nervous system imbalance"
+    },
+    {
+        "count": 1,
+        "symptom": "Audiogram abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Atrial flutter"
+    },
+    {
+        "count": 1,
+        "symptom": "Aspartate aminotransferase normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Abdominal lymphadenopathy"
+    },
+    {
+        "count": 1,
+        "symptom": "Abdominal tenderness"
+    },
+    {
+        "count": 1,
+        "symptom": "Acoustic stimulation tests abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Activated partial thromboplastin time normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Acute motor-sensory axonal neuropathy"
+    },
+    {
+        "count": 1,
+        "symptom": "Acute pulmonary oedema"
+    },
+    {
+        "count": 1,
+        "symptom": "Adverse event"
+    },
+    {
+        "count": 1,
+        "symptom": "Alanine aminotransferase normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Angiogram pulmonary normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Antineutrophil cytoplasmic antibody"
+    },
+    {
+        "count": 1,
+        "symptom": "Antinuclear antibody"
+    },
+    {
+        "count": 1,
+        "symptom": "Aphonia"
+    },
+    {
+        "count": 1,
+        "symptom": "Arteriogram coronary abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Arteriospasm coronary"
+    },
+    {
+        "count": 1,
+        "symptom": "Arthropathy"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood lactic acid decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood pressure abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Contusion"
+    },
+    {
+        "count": 1,
+        "symptom": "Complicated appendicitis"
+    },
+    {
+        "count": 1,
+        "symptom": "Cardiac murmur"
+    },
+    {
+        "count": 1,
+        "symptom": "Cardiogenic shock"
+    },
+    {
+        "count": 1,
+        "symptom": "Catheterisation cardiac abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Catheterisation cardiac normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Cerebral artery embolism"
+    },
+    {
+        "count": 1,
+        "symptom": "Choking sensation"
+    },
+    {
+        "count": 1,
+        "symptom": "Complement factor"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram head abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood pressure decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram neck"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram pelvis"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram thorax"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram thorax abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Computerised tomogram thorax normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Constipation"
+    },
+    {
+        "count": 1,
+        "symptom": "Cardiac monitoring"
+    },
+    {
+        "count": 1,
+        "symptom": "Cardiac function test normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Cardiac ablation"
+    },
+    {
+        "count": 1,
+        "symptom": "Carbon dioxide normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood sodium normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood test abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood thyroid stimulating hormone decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood urea normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Blood urine present"
+    },
+    {
+        "count": 1,
+        "symptom": "Brain death"
+    },
+    {
+        "count": 1,
+        "symptom": "Brain natriuretic peptide increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Breast swelling"
+    },
+    {
+        "count": 1,
+        "symptom": "Breath sounds abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Bronchial hyperreactivity"
+    },
+    {
+        "count": 1,
+        "symptom": "Bullous haemorrhagic dermatosis"
+    },
+    {
+        "count": 1,
+        "symptom": "COVID-19 pneumonia"
+    },
+    {
+        "count": 1,
+        "symptom": "CSF cell count normal"
+    },
+    {
+        "count": 1,
+        "symptom": "CSF culture"
+    },
+    {
+        "count": 1,
+        "symptom": "CSF protein normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electrocardiogram ST segment depression"
+    },
+    {
+        "count": 1,
+        "symptom": "Hyporeflexia"
+    },
+    {
+        "count": 1,
+        "symptom": "Electrocardiogram T wave abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Pericarditis"
+    },
+    {
+        "count": 1,
+        "symptom": "Pharyngeal paraesthesia"
+    },
+    {
+        "count": 1,
+        "symptom": "Photosensitivity reaction"
+    },
+    {
+        "count": 1,
+        "symptom": "Platelet count increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Pleural effusion"
+    },
+    {
+        "count": 1,
+        "symptom": "Pleuritic pain"
+    },
+    {
+        "count": 1,
+        "symptom": "Pneumonia aspiration"
+    },
+    {
+        "count": 1,
+        "symptom": "Poor quality sleep"
+    },
+    {
+        "count": 1,
+        "symptom": "Posture abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Pregnancy test"
+    },
+    {
+        "count": 1,
+        "symptom": "Premature baby"
+    },
+    {
+        "count": 1,
+        "symptom": "Premature delivery"
+    },
+    {
+        "count": 1,
+        "symptom": "Procalcitonin normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Protein total normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Protein urine present"
+    },
+    {
+        "count": 1,
+        "symptom": "Pulmonary hilar enlargement"
+    },
+    {
+        "count": 1,
+        "symptom": "Pulmonary oedema"
+    },
+    {
+        "count": 1,
+        "symptom": "Pulseless electrical activity"
+    },
+    {
+        "count": 1,
+        "symptom": "Purpura"
+    },
+    {
+        "count": 1,
+        "symptom": "Radiculitis brachial"
+    },
+    {
+        "count": 1,
+        "symptom": "Pharyngeal erythema"
+    },
+    {
+        "count": 1,
+        "symptom": "Perfusion brain scan normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Multiple organ dysfunction syndrome"
+    },
+    {
+        "count": 1,
+        "symptom": "Paralysis"
+    },
+    {
+        "count": 1,
+        "symptom": "Muscle contractions involuntary"
+    },
+    {
+        "count": 1,
+        "symptom": "Muscle disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Muscle fatigue"
+    },
+    {
+        "count": 1,
+        "symptom": "Muscle rigidity"
+    },
+    {
+        "count": 1,
+        "symptom": "Musculoskeletal discomfort"
+    },
+    {
+        "count": 1,
+        "symptom": "Musculoskeletal stiffness"
+    },
+    {
+        "count": 1,
+        "symptom": "Myocardial necrosis marker normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Neuralgia"
+    },
+    {
+        "count": 1,
+        "symptom": "Neuralgic amyotrophy"
+    },
+    {
+        "count": 1,
+        "symptom": "Neurological examination normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Neurological symptom"
+    },
+    {
+        "count": 1,
+        "symptom": "Neutrophil percentage increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Neutrophilia"
+    },
+    {
+        "count": 1,
+        "symptom": "Night sweats"
+    },
+    {
+        "count": 1,
+        "symptom": "Obstructive airways disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Ocular discomfort"
+    },
+    {
+        "count": 1,
+        "symptom": "Oedema peripheral"
+    },
+    {
+        "count": 1,
+        "symptom": "Oral pruritus"
+    },
+    {
+        "count": 1,
+        "symptom": "Orthostatic hypotension"
+    },
+    {
+        "count": 1,
+        "symptom": "Rales"
+    },
+    {
+        "count": 1,
+        "symptom": "Red blood cell count decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Red blood cell count increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Red blood cell nucleated morphology"
+    },
+    {
+        "count": 1,
+        "symptom": "Thrombectomy"
+    },
+    {
+        "count": 1,
+        "symptom": "Thyroxine normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Tongue pruritus"
+    },
+    {
+        "count": 1,
+        "symptom": "Troponin T normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Troponin normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Ultrasound Doppler"
+    },
+    {
+        "count": 1,
+        "symptom": "Ultrasound scan abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Ultrasound spleen"
+    },
+    {
+        "count": 1,
+        "symptom": "Urinary retention"
+    },
+    {
+        "count": 1,
+        "symptom": "Urine leukocyte esterase positive"
+    },
+    {
+        "count": 1,
+        "symptom": "Urosepsis"
+    },
+    {
+        "count": 1,
+        "symptom": "Use of accessory respiratory muscles"
+    },
+    {
+        "count": 1,
+        "symptom": "Vaginal haemorrhage"
+    },
+    {
+        "count": 1,
+        "symptom": "Vasodilatation"
+    },
+    {
+        "count": 1,
+        "symptom": "Ventricular fibrillation"
+    },
+    {
+        "count": 1,
+        "symptom": "Vestibular neuronitis"
+    },
+    {
+        "count": 1,
+        "symptom": "Vitamin B12 decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Vocal cord disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Vomiting projectile"
+    },
+    {
+        "count": 1,
+        "symptom": "Throat clearing"
+    },
+    {
+        "count": 1,
+        "symptom": "Tension headache"
+    },
+    {
+        "count": 1,
+        "symptom": "Taste disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "SARS-CoV-2 test"
+    },
+    {
+        "count": 1,
+        "symptom": "Red blood cell sedimentation rate normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Red blood cells urine positive"
+    },
+    {
+        "count": 1,
+        "symptom": "Red cell distribution width"
+    },
+    {
+        "count": 1,
+        "symptom": "Respiratory failure"
+    },
+    {
+        "count": 1,
+        "symptom": "Respiratory rate"
+    },
+    {
+        "count": 1,
+        "symptom": "Rhabdomyolysis"
+    },
+    {
+        "count": 1,
+        "symptom": "SARS-CoV-2 antibody test"
+    },
+    {
+        "count": 1,
+        "symptom": "SARS-CoV-2 antibody test positive"
+    },
+    {
+        "count": 1,
+        "symptom": "Saliva altered"
+    },
+    {
+        "count": 1,
+        "symptom": "Systemic lupus erythematosus"
+    },
+    {
+        "count": 1,
+        "symptom": "Scan with contrast"
+    },
+    {
+        "count": 1,
+        "symptom": "Sensation of foreign body"
+    },
+    {
+        "count": 1,
+        "symptom": "Sensitive skin"
+    },
+    {
+        "count": 1,
+        "symptom": "Sensory loss"
+    },
+    {
+        "count": 1,
+        "symptom": "Sneezing"
+    },
+    {
+        "count": 1,
+        "symptom": "Spinal X-ray normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Stridor"
+    },
+    {
+        "count": 1,
+        "symptom": "Suture insertion"
+    },
+    {
+        "count": 1,
+        "symptom": "Muscle atrophy"
+    },
+    {
+        "count": 1,
+        "symptom": "Motor dysfunction"
+    },
+    {
+        "count": 1,
+        "symptom": "Electrocardiogram ambulatory"
+    },
+    {
+        "count": 1,
+        "symptom": "Gastrointestinal disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "General physical health deterioration"
+    },
+    {
+        "count": 1,
+        "symptom": "Glycosylated haemoglobin increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Granulocyte count"
+    },
+    {
+        "count": 1,
+        "symptom": "Granulocyte percentage"
+    },
+    {
+        "count": 1,
+        "symptom": "Grunting"
+    },
+    {
+        "count": 1,
+        "symptom": "Haematocrit decreased"
+    },
+    {
+        "count": 1,
+        "symptom": "Haematology test"
+    },
+    {
+        "count": 1,
+        "symptom": "Haemolytic anaemia"
+    },
+    {
+        "count": 1,
+        "symptom": "Hallucination"
+    },
+    {
+        "count": 1,
+        "symptom": "Head discomfort"
+    },
+    {
+        "count": 1,
+        "symptom": "Hepatitis viral test negative"
+    },
+    {
+        "count": 1,
+        "symptom": "Hospice care"
+    },
+    {
+        "count": 1,
+        "symptom": "Human chorionic gonadotropin"
+    },
+    {
+        "count": 1,
+        "symptom": "Human chorionic gonadotropin negative"
+    },
+    {
+        "count": 1,
+        "symptom": "Hypermetabolism"
+    },
+    {
+        "count": 1,
+        "symptom": "Hypertensive emergency"
+    },
+    {
+        "count": 1,
+        "symptom": "Hypokalaemia"
+    },
+    {
+        "count": 1,
+        "symptom": "White blood cells urine positive"
+    },
+    {
+        "count": 1,
+        "symptom": "Inappropriate schedule of product administration"
+    },
+    {
+        "count": 1,
+        "symptom": "Gastrointestinal sounds abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Gastric dilatation"
+    },
+    {
+        "count": 1,
+        "symptom": "Motion sickness"
+    },
+    {
+        "count": 1,
+        "symptom": "Full blood count abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electroencephalogram normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electromyogram abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Electromyogram normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Encephalopathy"
+    },
+    {
+        "count": 1,
+        "symptom": "Enlarged uvula"
+    },
+    {
+        "count": 1,
+        "symptom": "Epistaxis"
+    },
+    {
+        "count": 1,
+        "symptom": "Epstein-Barr virus test negative"
+    },
+    {
+        "count": 1,
+        "symptom": "Eye movement disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Eye pain"
+    },
+    {
+        "count": 1,
+        "symptom": "Eyelid function disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Eyelid ptosis"
+    },
+    {
+        "count": 1,
+        "symptom": "Facial paresis"
+    },
+    {
+        "count": 1,
+        "symptom": "Febrile convulsion"
+    },
+    {
+        "count": 1,
+        "symptom": "Feeding disorder"
+    },
+    {
+        "count": 1,
+        "symptom": "Feeling drunk"
+    },
+    {
+        "count": 1,
+        "symptom": "Flank pain"
+    },
+    {
+        "count": 1,
+        "symptom": "Flatulence"
+    },
+    {
+        "count": 1,
+        "symptom": "Fluid intake reduced"
+    },
+    {
+        "count": 1,
+        "symptom": "Focal peritonitis"
+    },
+    {
+        "count": 1,
+        "symptom": "Incoherent"
+    },
+    {
+        "count": 1,
+        "symptom": "Incorrect route of product administration"
+    },
+    {
+        "count": 1,
+        "symptom": "Increased bronchial secretion"
+    },
+    {
+        "count": 1,
+        "symptom": "Influenza"
+    },
+    {
+        "count": 1,
+        "symptom": "Lower respiratory tract infection"
+    },
+    {
+        "count": 1,
+        "symptom": "Lumbar puncture"
+    },
+    {
+        "count": 1,
+        "symptom": "Lumbar puncture abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Lumbar puncture normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Lung opacity"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging brain abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging neck"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging spinal"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging spinal abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging spinal normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Magnetic resonance imaging thoracic"
+    },
+    {
+        "count": 1,
+        "symptom": "Mean cell haemoglobin concentration normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Mean cell haemoglobin normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Mean cell volume normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Mechanical ventilation"
+    },
+    {
+        "count": 1,
+        "symptom": "Mental impairment"
+    },
+    {
+        "count": 1,
+        "symptom": "Mental status changes"
+    },
+    {
+        "count": 1,
+        "symptom": "Metabolic function test abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Mononeuropathy"
+    },
+    {
+        "count": 1,
+        "symptom": "Liver function test abnormal"
+    },
+    {
+        "count": 1,
+        "symptom": "Liver function test"
+    },
+    {
+        "count": 1,
+        "symptom": "Livedo reticularis"
+    },
+    {
+        "count": 1,
+        "symptom": "Interleukin level"
+    },
+    {
+        "count": 1,
+        "symptom": "Influenza virus test negative"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site cellulitis"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site erythema"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site induration"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site joint pain"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site nodule"
+    },
+    {
+        "count": 1,
+        "symptom": "Injection site reaction"
+    },
+    {
+        "count": 1,
+        "symptom": "Insomnia"
+    },
+    {
+        "count": 1,
+        "symptom": "Intervertebral disc protrusion"
+    },
+    {
+        "count": 1,
+        "symptom": "Lipids normal"
+    },
+    {
+        "count": 1,
+        "symptom": "Ischaemic stroke"
+    },
+    {
+        "count": 1,
+        "symptom": "Laryngitis"
+    },
+    {
+        "count": 1,
+        "symptom": "Laryngospasm"
+    },
+    {
+        "count": 1,
+        "symptom": "Left ventricular end-diastolic pressure increased"
+    },
+    {
+        "count": 1,
+        "symptom": "Lethargy"
+    },
+    {
+        "count": 1,
+        "symptom": "Leukocytosis"
+    },
+    {
+        "count": 1,
+        "symptom": "Life support"
+    },
+    {
+        "count": 1,
+        "symptom": "Limb injury"
+    },
+    {
+        "count": 1,
+        "symptom": "AST/ALT ratio abnormal"
+    }
+]
