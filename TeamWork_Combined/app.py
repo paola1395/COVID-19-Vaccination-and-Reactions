@@ -24,11 +24,11 @@ app= Flask(__name__)
 
 # read json file
 # JSON data files
-with open('./static/data/doseOneSymptoms.json', 'r') as data_one:
+with open('./static/data/doseOneSymptomsUpdated.json', 'r') as data_one:
     sympOne = json.loads(data_one.read())
-with open('./static/data/doseTwoSymptoms.json', 'r') as data_two:
+with open('./static/data/doseTwoSymptomsUpdated.json', 'r') as data_two:
     sympTwo = json.loads(data_two.read())
-with open('./static/data/doseUnkSymptoms.json', 'r') as other_data:
+with open('./static/data/doseUnkSymptomsUpdated.json', 'r') as other_data:
     otherSymp = json.loads(other_data.read())
 
 

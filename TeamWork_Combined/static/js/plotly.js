@@ -11,18 +11,23 @@ function init() {
                 }
             })
         })
-        // console.log(sd);
-        // console.log(cd);
-        var ts = sd.slice(0, 10);
+        console.log(cd.reduce((a, b) => a + b, 0));
+        // total count of all symptoms: 4882
+        // console.log(cd.slice(-1));
+        var ts = sd.slice(0, 9);
         // console.log(ts);
-        var td = cd.slice(0, 10);
+        var td = cd.slice(0, 9);
+
+        ts.push("All Other Symptoms");
+        td.push(cd.reduce((a, b) => a + b, 0) - td.reduce((a, b) => a + b, 0));
+        console.log(ts);
         // console.log(td);
         data = [{
             labels: ts,
             values: td,
-            type: "pie"
+            type: "pie",
         }]
-        Plotly.newPlot("bubble", data);
+        Plotly.newPlot("pie", data);
     })
 }
 d3.selectAll("#selDataset").on("change", updatePlotly);
@@ -42,16 +47,18 @@ function updatePlotly() {
                     }
                 })
             });
-            var topSymptoms = sd1.slice(0, 10);
+            var topSymptoms = sd1.slice(0, 9);
             // console.log(topSymptoms);
-            var topCounts = cd1.slice(0, 10);
+            var topCounts = cd1.slice(0, 9);
+            topSymptoms.push("All Other Symptoms");
+            topCounts.push(4882 - topCounts.reduce((a, b) => a + b, 0));
             // console.log(topCounts);
             var x =topSymptoms;
             var y =topCounts;
             type = "pie";
-            Plotly.restyle("bubble", "labels", [x]);
-            Plotly.restyle("bubble", "values", [y]);
-            Plotly.restyle("bubble", "type", type);
+            Plotly.restyle("pie", "labels", [x]);
+            Plotly.restyle("pie", "values", [y]);
+            Plotly.restyle("pie", "type", type);
         })
     }
     else if (dataset === 'dose2') {
@@ -67,16 +74,20 @@ function updatePlotly() {
                     }
                 })
             });
-            var topSymptoms2 = sd2.slice(0, 10);
+            var topSymptoms2 = sd2.slice(0, 9);
             // console.log(topSymptoms2);
-            var topCounts2 = cd2.slice(0, 10);
+            var topCounts2 = cd2.slice(0, 9);
             // console.log(topCounts2);
+
+            topSymptoms2.push("All Other Symptoms");
+            topCounts2.push(cd2.reduce((a, b) => a + b, 0) - topCounts2.reduce((a, b) => a + b, 0));
+
             var x =  topSymptoms2;
             var y = topCounts2;
             type = "pie";
-            Plotly.restyle("bubble", "labels", [x]);
-            Plotly.restyle("bubble", "values", [y]);
-            Plotly.restyle("bubble", "type", type);
+            Plotly.restyle("pie", "labels", [x]);
+            Plotly.restyle("pie", "values", [y]);
+            Plotly.restyle("pie", "type", type);
         })
     }
     else {
@@ -92,16 +103,20 @@ function updatePlotly() {
                     }
                 })
             });
-            var topSymptoms3 = os.slice(0, 10);
+            var topSymptoms3 = os.slice(0, 9);
             // console.log(topSymptoms3);
-            var topCounts3 = oc.slice(0, 10);
+            var topCounts3 = oc.slice(0, 9);
             // console.log(topCounts3);
+
+            topSymptoms3.push("All Other Symptoms");
+            topCounts3.push(oc.reduce((a, b) => a + b, 0) - topCounts3.reduce((a, b) => a + b, 0));
+
             var x =topSymptoms3;
             var y = topCounts3;
             type = "pie";
-            Plotly.restyle("bubble", "labels", [x]);
-            Plotly.restyle("bubble", "values", [y]);
-            Plotly.restyle("bubble", "type", type);
+            Plotly.restyle("pie", "labels", [x]);
+            Plotly.restyle("pie", "values", [y]);
+            Plotly.restyle("pie", "type", type);
         })
     }
 };
