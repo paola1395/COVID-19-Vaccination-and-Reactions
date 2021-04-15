@@ -33,7 +33,7 @@ We will also classify a vaccine as approved if one of these two bodies greenligh
 | Moderna COVID‑19 Vaccine (mRNA-1273)| mRNA-based vaccine | Moderna, BARDA, NIAID | US |
 | Sputnik V | Recombinant adenovirus vaccine (rAd26 and rAd5) | Gamaleya Research Institute, Acellena Contract Drug Research and Development | Russia |
 
-### Limitations + Strengths (VASERS - Vaccine Adverse Event Reporting System)
+### Limitations + Strengths (VAERS - Vaccine Adverse Event Reporting System)
 
 
 |         Strengths               | Limitations |
