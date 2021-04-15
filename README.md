@@ -2,6 +2,8 @@
 
 ![COVID-Vaccine](Images/Images3.jpg)
 
+*Data Time: early January 2021 to early Feburary 2021
+
 ## Heroku App:
 https://covid-reactions.herokuapp.com/
 
