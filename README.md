@@ -1,6 +1,9 @@
-# Covid19 Global Vaccinations & Adverse Reactions
+# [Covid19 Global Vaccinations & Adverse Reactions](https://covid-reactions.herokuapp.com/)
 
 ![COVID-Vaccine](Images/Images3.jpg)
+
+## Heroku App:
+https://covid-reactions.herokuapp.com/
 
 ## Motivation:
 The novel coronavirus disease (COVID-19)—which emerged in Wuhan, China, in November 2019—has grown into a global threat and was eventually declared a global pandemic. It has seriously impacted the lives of many and caused numerous deaths, caused by the novel SARS-CoV-2 virus. CVR team further examined the effects and benefits of COVID-19 Vaccines globally.  
@@ -78,7 +81,7 @@ Track COVID-19 vaccination in the World, answer questions:
 
 ### Data Analytics Team:
 * [Navi Sohi](https://github.com/PlainJane20): `Project Idea`, `Data collection`, `Readme`, `Website design` using -->`HTML5`/`CSS3`/`PHP`/`Bootstrap`,`sqdb conversion to sqlite using SQLite`
-* [Leonard Zhao](https://github.com/leonardz17): `Leaflet`, `Data to JSON + Boundaries JSON File`, `plotly` 
+* [Leonard Zhao](https://github.com/leonardz17): `Leaflet`, `Data to JSON + Boundaries JSON File`, `plotly`, `heroku deployment` 
 * [Paola Lopez](https://github.com/paola1395): `Python Flask`, `D3`, `plotly`, `use of Canva for Logo creation`
 * [Yuying Hong](https://github.com/yuyhong23): `Data cleaning + Convert dataset to sqlite db`,  `zdog library`, `Combine Everyone's Parts Together`
 * Team: `Data Organization & Understanding`, `Research Questions`, `Visualization/Graphs Planning`, `Debug/Supports`
