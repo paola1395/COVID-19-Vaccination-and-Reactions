@@ -40,7 +40,7 @@ with open('./static/data/doseUnkSymptoms.json', 'r') as other_data:
 #HOME/WELCOME PAGE
 @app.route("/")
 def homepage():
-    return render_template("index.html")
+    return render_template("index2.html")
 
 @app.route("/doseone")
 def jsonOne():
